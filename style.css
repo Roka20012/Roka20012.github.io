@@ -4,7 +4,7 @@
 }
 */
 body {
-/*    margin-top: -30px;
+    /*    margin-top: -30px;
     margin-bottom: -30px;
     color: white;
 
@@ -29,7 +29,7 @@ body {
     display: none;
 }
 
-nav {
+.menu-open, .menu-close {
     margin-right: 25px;
     margin-left: 0px;
     top: 55px;
@@ -98,7 +98,7 @@ a:active {
     border-left: 10px solid;
     box-shadow: -5px 5px 50px 20px #888;
     /*transform: scale(1.1); #C0C0C0FF*/
-    background: #D52940FF;
+    background-color: #D52940FF;
 }
 
 
@@ -106,7 +106,7 @@ a:active {
 
 @media screen and (max-width: 1000px) {
 
-    nav {
+    .menu-close {
         z-index: 1;
         height: 300px;
         width: 150px;
@@ -114,6 +114,19 @@ a:active {
         padding: 400px 10px 100% 10px;
         position: fixed;
         margin-left: -170px;
+        transition: all ease .2s;
+        background-color: #454545FF;
+        left: 0px;
+    }
+
+    .menu-open {
+        z-index: 1;
+        height: 300px;
+        width: 150px;
+        top: 0px;
+        padding: 400px 10px 100% 10px;
+        position: fixed;
+        margin-left: 0px;
         transition: all ease .2s;
         background-color: #454545FF;
         left: 0px;
@@ -178,5 +191,3 @@ a:active {
         background-color: orange;
     }
 }
-
-

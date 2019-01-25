@@ -37,33 +37,33 @@ let stories = {
 };
 
 
-let nav = document.getElementById("stories");
+let nav = document.getElementsByTagName("nav")[0];
 let text = document.getElementById("text");
 
 
 function checkStory(e) {
     if (e.target.tagName == "A") {
         text.innerHTML = stories[e.target.getAttribute("class")];
-        // let computedStyle = getComputedStyle(nav).marginLeft;
-        // console.log(computedStyle.style.marginLeft);
         let width = window.innerWidth ||
             document.documentElement.clientWidth ||
             document.body.clientWidth;
-        if(width < 1000) nav.style.marginLeft = "-170px";
+        if (width < 1000) {
+
+            nav.classList.toggle("menu-open");
+            nav.classList.toggle("menu-close");
+        }
     }
 }
 
 nav.addEventListener("click", checkStory);
 
 function hideOpenMenu(e) {
-	let target = e.target;
+    let target = e.target;
     let computedStyle = getComputedStyle(nav).marginLeft;
+    nav.classList.toggle("menu-open");
+    nav.classList.toggle("menu-close");
 
-    if (computedStyle == "-170px") {
-        nav.style.marginLeft = "0px";
-    } else {
-        nav.style.marginLeft = "-170px";
-    }
+
 }
 
 let burgerButton = document.getElementsByClassName("burger")[0];
