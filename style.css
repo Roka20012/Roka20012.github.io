@@ -28,12 +28,11 @@ body {
 
 .menu-open,
 .menu-close {
-    margin-right: 25px;
-    margin-left: 0px;
-    top: 55px;
+    margin-right: 40px;
+    top: 60px;
     position: relative;
     text-align: center;
-    width: 200px;
+    width: 280px;
     display: flex;
     flex-direction: column;
 }
@@ -109,8 +108,9 @@ h1 {
 }
 
 a {
-    margin-bottom: 3px;
+    margin-bottom: 0px;
     top: 10px;
+    left: 10px;
     height: 30px;
     position: relative;
     display: inline-block;
@@ -121,10 +121,11 @@ a {
     user-select: none;
     padding: 1em 2em 0.5em 2em;
     outline: none;
-    border: 1px solid;
     border-radius: 1px;
     transition: all ease 0.3s;
 }
+
+
 
 .menu-open a:not(.check):hover,
 .menu-close a:not(.check):hover {
@@ -141,13 +142,13 @@ a {
     background-color: #D52940FF;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px){
 
     .menu-close {
         z-index: 1;
         height: 300px;
         width: 150px;
-        top: 0px;
+        top: -30px;
         padding: 400px 10px 100% 10px;
         position: fixed;
         margin-left: -170px;
@@ -159,9 +160,9 @@ a {
     .menu-open {
         z-index: 1;
         height: 300px;
-        width: 150px;
-        top: 0px;
-        padding: 400px 10px 100% 10px;
+        width: 50%;
+        top: -30px;
+        padding: 400px 0px 100% 0px;
         position: fixed;
         margin-left: 0px;
         transition: all ease .2s;
