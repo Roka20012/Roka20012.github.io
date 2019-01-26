@@ -220,3 +220,9 @@ body {
     right: 10px;
     top: 0px;
 }
+
+a[href="https://github.com/Roka20012"] {
+    color: white;
+    text-decoration: none;
+}
+
