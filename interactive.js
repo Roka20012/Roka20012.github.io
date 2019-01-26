@@ -1,5 +1,4 @@
 let stories = {
-    // 1: `<p>Hello</p>`,
     2: `<p><span><strong>Storie 2.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit similique molestiae eligendi laudantium minus consequatur repellat ipsa, nemo repudiandae perspiciatis, magni aut temporibus nam ipsum expedita aperiam laboriosam quia, sapiente.</span>
 				<span>Hic  nemo quia odio quo numquam cum praesentium quis dolor impedit amet porro aut eos eaque dolore esse incidunt quos, voluptas doloremque eveniet blanditiis! Earum doloremque temporibus cupiditate laboriosam.</span>
 				<span>Doloribus fugiat cumque nostrum, error iusto vitae voluptatem porro ipsam officiis provident ut ad. Repellat quas at temporibus numquam rem culpa adipisci, blanditiis soluta vitae accusantium, veritatis laboriosam. Voluptate, praesentium.</span>
@@ -34,7 +33,12 @@ let stories = {
 let nav = document.getElementsByTagName("nav")[0];
 let text = document.getElementById("text");
 
-
+/**
+ * закриває меню якщо ми натискаємо на пункт меню 
+ * коли ширина екрана менша 1000px
+ * author: Rostyk Broslavsky
+ * email: broslavsky.rostislaw@gmail.com
+ */
 function hideBurgerMenu() {
     let width = window.innerWidth ||
         document.documentElement.clientWidth ||
@@ -45,26 +49,40 @@ function hideBurgerMenu() {
     }
 }
 
+/**
+ * додає колір для вибраного елемента
+ * author: Rostyk Broslavsky
+ * email: broslavsky.rostislaw@gmail.com
+ */
 function setMark(target) {
     let a = Array.from(nav.children);
 
-    a.forEach(function(el, i) {
+    a.forEach((el, i) => {
         el.classList.remove("check");
         target.classList.add("check");
     });
 }
 
+/**
+ * при виборі пункта меню показує відповідний текст
+ * author: Rostyk Broslavsky
+ * email: broslavsky.rostislaw@gmail.com
+ */
 function showText(index) {
     let textChild = Array.from(text.children);
 
-    textChild.forEach(function(el, index) {
+    textChild.forEach((el, index) => {
         el.id = "";
-
     });
 
     textChild[index].id = "animeText";
 }
 
+/**
+ * Заповнює елементи контентом і показує 
+ * author: Rostyk Broslavsky
+ * email: broslavsky.rostislaw@gmail.com
+ */
 function checkStory(e) {
     let target = e.target;
 
@@ -84,6 +102,11 @@ function checkStory(e) {
 
 nav.addEventListener("click", checkStory);
 
+/**
+ * Відкриває закриває меню при натисканні на бургер
+ * author: Rostyk Broslavsky
+ * email: broslavsky.rostislaw@gmail.com
+ */
 function hideOpenBurgerMenu(e) {
     nav.classList.toggle("menu-open");
     nav.classList.toggle("menu-close");

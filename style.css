@@ -1,23 +1,10 @@
-/** {
-    margin: 0;
-    padding: 0;
-}
-*/
 body {
-    /*        margin-top: -30px;
-    margin-bottom: -30px;
-    color: white;
-
-    background-image: url(images/background.jpg);
-    background-repeat: no-repeat;*/
     background-size: 2000px 1300px;
-
     background-image: url(images/background.jpg);
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     color: white;
-
     font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
 
 }
@@ -28,6 +15,7 @@ body {
 
 .menu-open,
 .menu-close {
+    transition: all ease 0.2s;
     margin-right: 40px;
     top: 60px;
     position: relative;
@@ -37,19 +25,19 @@ body {
     flex-direction: column;
 }
 
+
+
 .data-text {
+    display: block;
     position: relative;
     top: 45px;
     width: 1000px;
     font-size: 16px;
     line-height: 22px;
     font-family: sans-serif;
-/*    animation-duration: 1s;
-    animation-name: slidein;*/
 }
 
-
-.data-text  div {
+.data-text div {
     display: none;
 }
 
@@ -65,13 +53,10 @@ body {
     from {
         transform: scale(0.9);
         opacity: 0;
-/*        top: -50px;*/
     }
 
     to {
-
         opacity: 1;
-/*        top: 0px;*/
     }
 }
 
@@ -93,7 +78,7 @@ body {
     animation-name: forAll;
 }
 
-h1 {
+.logo {
     position: relative;
     top: 30px;
     font-size: 45px;
@@ -107,7 +92,7 @@ h1 {
     justify-content: space-around;
 }
 
-a {
+#navbar a {
     margin-bottom: 0px;
     top: 10px;
     left: 10px;
@@ -122,28 +107,27 @@ a {
     padding: 1em 2em 0.5em 2em;
     outline: none;
     border-radius: 1px;
+    border-right: 0px solid;
+    border-left: 0px solid;
     transition: all ease 0.3s;
 }
 
 
-
-.menu-open a:not(.check):hover,
-.menu-close a:not(.check):hover {
+#navbar a:not(.check):hover {
     background: #888;
     cursor: pointer;
     border-right: 10px solid;
     border-left: 10px solid;
 }
 
-.check {
+#navbar .check {
     transition: all ease 0.5s;
     border-right: 10px solid;
     border-left: 10px solid;
     background-color: #D52940FF;
 }
 
-@media screen and (max-width: 1000px){
-
+@media screen and (max-width: 1000px) {
     .menu-close {
         z-index: 1;
         height: 300px;
@@ -170,7 +154,7 @@ a {
         left: 0px;
     }
 
-    a {
+    #navbar a {
         top: -200px;
         left: 0px;
     }
@@ -182,12 +166,9 @@ a {
 
     }
 
-
-
     .burger {
         position: absolute;
         z-index: 3;
-        /*        background-color: red;*/
         width: 40px;
         height: 25px;
         top: 35px;
@@ -199,7 +180,6 @@ a {
     }
 
     .burger1 {
-        /* box-shadow: 0px 10px 0px 20px #888 ;*/
         z-index: 2;
         border-radius: 20px;
         position: absolute;
