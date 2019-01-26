@@ -4,17 +4,16 @@
 }
 */
 body {
-    /*    margin-top: -30px;
+    /*        margin-top: -30px;
     margin-bottom: -30px;
     color: white;
 
     background-image: url(images/background.jpg);
-    background-repeat: no-repeat;
-    background-size: 2000px 1300px;*/
+    background-repeat: no-repeat;*/
+    background-size: 2000px 1300px;
 
     background-image: url(images/background.jpg);
     background-repeat: no-repeat;
-    background-size: 2000px 1300px;
     margin: 0;
     padding: 0;
     color: white;
@@ -23,13 +22,12 @@ body {
 
 }
 
-
-
 ::-webkit-scrollbar {
     display: none;
 }
 
-.menu-open, .menu-close {
+.menu-open,
+.menu-close {
     margin-right: 25px;
     margin-left: 0px;
     top: 55px;
@@ -47,6 +45,53 @@ body {
     font-size: 16px;
     line-height: 22px;
     font-family: sans-serif;
+/*    animation-duration: 1s;
+    animation-name: slidein;*/
+}
+
+
+.data-text  div {
+    display: none;
+}
+
+#animeText {
+    position: relative;
+    display: block;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+
+@keyframes slidein {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+/*        top: -50px;*/
+    }
+
+    to {
+
+        opacity: 1;
+/*        top: 0px;*/
+    }
+}
+
+@keyframes forAll {
+    from {
+        opacity: 0;
+        top: -70px;
+    }
+
+    to {
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+#all {
+    position: relative;
+    animation-duration: 1s;
+    animation-name: forAll;
 }
 
 h1 {
@@ -78,31 +123,23 @@ a {
     outline: none;
     border: 1px solid;
     border-radius: 1px;
-    transition: all ease 0.2s;
+    transition: all ease 0.3s;
 }
 
-a:hover {
+.menu-open a:not(.check):hover,
+.menu-close a:not(.check):hover {
     background: #888;
     cursor: pointer;
-    box-shadow: -5px 5px 50px 20px #888;
     border-right: 10px solid;
     border-left: 10px solid;
-    z-index: 1;
 }
 
-a:active {
-    z-index: 1;
-    /*transition: all ease 0.2s;*/
-    /*margin-right: -20px;*/
+.check {
+    transition: all ease 0.5s;
     border-right: 10px solid;
     border-left: 10px solid;
-    box-shadow: -5px 5px 50px 20px #888;
-    /*transform: scale(1.1); #C0C0C0FF*/
     background-color: #D52940FF;
 }
-
-
-
 
 @media screen and (max-width: 1000px) {
 
@@ -141,7 +178,10 @@ a:active {
         margin-top: -15px;
         margin-left: 20px;
         margin-right: 10px;
+
     }
+
+
 
     .burger {
         position: absolute;
@@ -190,4 +230,12 @@ a:active {
         height: 5px;
         background-color: orange;
     }
+}
+
+#me {
+    opacity: .2;
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 0px;
 }

@@ -1,33 +1,27 @@
 let stories = {
-    "stor1": `<p><span><strong>Storie 1.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit similique molestiae eligendi laudantium minus consequatur repellat ipsa, nemo repudiandae perspiciatis, magni aut temporibus nam ipsum expedita aperiam laboriosam quia, sapiente.</span>
-				<span>Hic nesciunt nemo quia odio quo numquam cum praesentium quis dolor impedit amet porro aut eos eaque dolore esse incidunt quos, voluptas doloremque eveniet blanditiis! Earum doloremque temporibus cupiditate laboriosam.</span>
+    // 1: `<p>Hello</p>`,
+    2: `<p><span><strong>Storie 2.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit similique molestiae eligendi laudantium minus consequatur repellat ipsa, nemo repudiandae perspiciatis, magni aut temporibus nam ipsum expedita aperiam laboriosam quia, sapiente.</span>
+				<span>Hic  nemo quia odio quo numquam cum praesentium quis dolor impedit amet porro aut eos eaque dolore esse incidunt quos, voluptas doloremque eveniet blanditiis! Earum doloremque temporibus cupiditate laboriosam.</span>
 				<span>Doloribus fugiat cumque nostrum, error iusto vitae voluptatem porro ipsam officiis provident ut ad. Repellat quas at temporibus numquam rem culpa adipisci, blanditiis soluta vitae accusantium, veritatis laboriosam. Voluptate, praesentium.</span>
 				<span>Laborum repudiandae id, quasi voluptate animi nulla, molestias provident possimus, architecto accusamus magnam veniam rerum perspiciatis dicta assumenda unde et eveniet sed illum quaerat aut eum suscipit! Deserunt voluptas, doloribus.</span>
 				<span>Rem ipsum eligendi id consequatur, expedita cumque neque. Dolor natus tempora repellendus quaerat accusamus eligendi doloribus, accusantium dolore voluptatibus dolorem fugiat architecto dolorum inventore error! Magnam doloremque velit, commodi minima!</span></p>
 				<p><span>Eligendi architecto voluptas alias labore reprehenderit temporibus sed, et laborum repellendus quis quae dicta mollitia voluptates, hic? Excepturi praesentium vel, labore veniam earum facere quae deserunt eius quaerat deleniti quod.</span>
 				<span>Qui asperiores assumenda, magni hic magnam quis earum blanditiis dolor adipisci, quibusdam voluptatibus ducimus distinctio quidem eaque dolorum voluptate delectus fuga nisi beatae veritatis. Debitis optio aspernatur deserunt commodi! Saepe.</span></p>`,
-    "stor2": `<p><span><strong>Storie 2.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit similique molestiae eligendi laudantium minus consequatur repellat ipsa, nemo repudiandae perspiciatis, magni aut temporibus nam ipsum expedita aperiam laboriosam quia, sapiente.</span>
+    3: `<p><span><strong>Storie 3.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit similique molestiae eligendi laudantium minus consequatur repellat ipsa, nemo repudiandae perspiciatis, magni aut temporibus nam ipsum expedita aperiam laboriosam quia, sapiente.</span>
 				<span>Hic nesciunt nemo quia odio quo numquam cum praesentium quis dolor impedit amet porro aut eos eaque dolore esse incidunt quos, voluptas doloremque eveniet blanditiis! Earum doloremque temporibus cupiditate laboriosam.</span>
-				<span>Doloribus fugiat cumque nostrum, error iusto vitae voluptatem porro ipsam officiis provident ut ad. Repellat quas at temporibus numquam rem culpa adipisci, blanditiis soluta vitae accusantium, veritatis laboriosam. Voluptate, praesentium.</span>
+				<span>Doloribus fror iusto vitae voluptatem porro ipsam officiis provident ut ad. Repellat quas at temporibus numquam rem culpa adipisci, blanditiis soluta vitae accusantium, veritatis laboriosam. Voluptate, praesentium.</span>
 				<span>Laborum repudiandae id, quasi voluptate animi nulla, molestias provident possimus, architecto accusamus magnam veniam rerum perspiciatis dicta assumenda unde et eveniet sed illum quaerat aut eum suscipit! Deserunt voluptas, doloribus.</span>
 				<span>Rem ipsum eligendi id consequatur, expedita cumque neque. Dolor natus tempora repellendus quaerat accusamus eligendi doloribus, accusantium dolore voluptatibus dolorem fugiat architecto dolorum inventore error! Magnam doloremque velit, commodi minima!</span></p>
 				<p><span>Eligendi architecto voluptas alias labore reprehenderit temporibus sed, et laborum repellendus quis quae dicta mollitia voluptates, hic? Excepturi praesentium vel, labore veniam earum facere quae deserunt eius quaerat deleniti quod.</span>
 				<span>Qui asperiores assumenda, magni hic magnam quis earum blanditiis dolor adipisci, quibusdam voluptatibus ducimus distinctio quidem eaque dolorum voluptate delectus fuga nisi beatae veritatis. Debitis optio aspernatur deserunt commodi! Saepe.</span></p>`,
-    "stor3": `<p><span><strong>Storie 3.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit similique molestiae eligendi laudantium minus consequatur repellat ipsa, nemo repudiandae perspiciatis, magni aut temporibus nam ipsum expedita aperiam laboriosam quia, sapiente.</span>
+    4: `<p><span><strong>Storie 4.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit similique molestiae eligendi laudantium minus consequatur repellat ipsa, nemo repudiandae perspiciatis, magni aut temporibus nam ipsum expedita aperiam laboriosam quia, sapiente.</span>
 				<span>Hic nesciunt nemo quia odio quo numquam cum praesentium quis dolor impedit amet porro aut eos eaque dolore esse incidunt quos, voluptas doloremque eveniet blanditiis! Earum doloremque temporibus cupiditate laboriosam.</span>
 				<span>Doloribus fugiat cumque nostrum, error iusto vitae voluptatem porro ipsam officiis provident ut ad. Repellat quas at temporibus numquam rem culpa adipisci, blanditiis soluta vitae accusantium, veritatis laboriosam. Voluptate, praesentium.</span>
-				<span>Laborum repudiandae id, quasi voluptate animi nulla, molestias provident possimus, architecto accusamus magnam veniam rerum perspiciatis dicta assumenda unde et eveniet sed illum quaerat aut eum suscipit! Deserunt voluptas, doloribus.</span>
+				<span>Laborum rid, quasi voluptate animi nulla, molestias provident possimus, architecto accusamus magnam veniam rerum perspiciatis dicta assumenda unde et eveniet sed illum quaerat aut eum suscipit! Deserunt voluptas, doloribus.</span>
 				<span>Rem ipsum eligendi id consequatur, expedita cumque neque. Dolor natus tempora repellendus quaerat accusamus eligendi doloribus, accusantium dolore voluptatibus dolorem fugiat architecto dolorum inventore error! Magnam doloremque velit, commodi minima!</span></p>
 				<p><span>Eligendi architecto voluptas alias labore reprehenderit temporibus sed, et laborum repellendus quis quae dicta mollitia voluptates, hic? Excepturi praesentium vel, labore veniam earum facere quae deserunt eius quaerat deleniti quod.</span>
 				<span>Qui asperiores assumenda, magni hic magnam quis earum blanditiis dolor adipisci, quibusdam voluptatibus ducimus distinctio quidem eaque dolorum voluptate delectus fuga nisi beatae veritatis. Debitis optio aspernatur deserunt commodi! Saepe.</span></p>`,
-    "stor4": `<p><span><strong>Storie 4.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit similique molestiae eligendi laudantium minus consequatur repellat ipsa, nemo repudiandae perspiciatis, magni aut temporibus nam ipsum expedita aperiam laboriosam quia, sapiente.</span>
-				<span>Hic nesciunt nemo quia odio quo numquam cum praesentium quis dolor impedit amet porro aut eos eaque dolore esse incidunt quos, voluptas doloremque eveniet blanditiis! Earum doloremque temporibus cupiditate laboriosam.</span>
-				<span>Doloribus fugiat cumque nostrum, error iusto vitae voluptatem porro ipsam officiis provident ut ad. Repellat quas at temporibus numquam rem culpa adipisci, blanditiis soluta vitae accusantium, veritatis laboriosam. Voluptate, praesentium.</span>
-				<span>Laborum repudiandae id, quasi voluptate animi nulla, molestias provident possimus, architecto accusamus magnam veniam rerum perspiciatis dicta assumenda unde et eveniet sed illum quaerat aut eum suscipit! Deserunt voluptas, doloribus.</span>
-				<span>Rem ipsum eligendi id consequatur, expedita cumque neque. Dolor natus tempora repellendus quaerat accusamus eligendi doloribus, accusantium dolore voluptatibus dolorem fugiat architecto dolorum inventore error! Magnam doloremque velit, commodi minima!</span></p>
-				<p><span>Eligendi architecto voluptas alias labore reprehenderit temporibus sed, et laborum repellendus quis quae dicta mollitia voluptates, hic? Excepturi praesentium vel, labore veniam earum facere quae deserunt eius quaerat deleniti quod.</span>
-				<span>Qui asperiores assumenda, magni hic magnam quis earum blanditiis dolor adipisci, quibusdam voluptatibus ducimus distinctio quidem eaque dolorum voluptate delectus fuga nisi beatae veritatis. Debitis optio aspernatur deserunt commodi! Saepe.</span></p>`,
-    "stor5": `<p><span><strong>Storie 5.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit similique molestiae eligendi laudantium minus consequatur repellat ipsa, nemo repudiandae perspiciatis, magni aut temporibus nam ipsum expedita aperiam laboriosam quia, sapiente.</span>
+    5: `<p><span><strong>Storie 5.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit similique molestiae eligendi laudantium minus consequatur repellat ipsa, nemo repudiandae perspiciatis, magni aut temporibus nam ipsum expedita aperiam laboriosam quia, sapiente.</span>
 				<span>Hic nesciunt nemo quia odio quo numquam cum praesentium quis dolor impedit amet porro aut eos eaque dolore esse incidunt quos, voluptas doloremque eveniet blanditiis! Earum doloremque temporibus cupiditate laboriosam.</span>
 				<span>Doloribus fugiat cumque nostrum, error iusto vitae voluptatem porro ipsam officiis provident ut ad. Repellat quas at temporibus numquam rem culpa adipisci, blanditiis soluta vitae accusantium, veritatis laboriosam. Voluptate, praesentium.</span>
 				<span>Laborum repudiandae id, quasi voluptate animi nulla, molestias provident possimus, architecto accusamus magnam veniam rerum perspiciatis dicta assumenda unde et eveniet sed illum quaerat aut eum suscipit! Deserunt voluptas, doloribus.</span>
@@ -41,31 +35,60 @@ let nav = document.getElementsByTagName("nav")[0];
 let text = document.getElementById("text");
 
 
-function checkStory(e) {
-    if (e.target.tagName == "A") {
-        text.innerHTML = stories[e.target.getAttribute("class")];
-        let width = window.innerWidth ||
-            document.documentElement.clientWidth ||
-            document.body.clientWidth;
-        if (width < 1000) {
+function hideBurgerMenu() {
+    let width = window.innerWidth ||
+        document.documentElement.clientWidth ||
+        document.body.clientWidth;
+    if (width < 1000) {
+        nav.classList.toggle("menu-open");
+        nav.classList.toggle("menu-close");
+    }
+}
 
-            nav.classList.toggle("menu-open");
-            nav.classList.toggle("menu-close");
+function setMark(target) {
+    let a = Array.from(nav.children);
+
+    a.forEach(function(el, i) {
+        el.classList.remove("check");
+        target.classList.add("check");
+    });
+}
+
+function showText(index) {
+    let textChild = Array.from(text.children);
+
+    textChild.forEach(function(el, index) {
+        el.id = "";
+
+    });
+
+    textChild[index].id = "animeText";
+}
+
+function checkStory(e) {
+    let target = e.target;
+
+    if (target.tagName == "A") {
+        for (let i = 0; i < nav.children.length; i++) {
+            if (nav.children[i] == target) {
+            	if(!text.children[i].children.length) text.children[i].innerHTML = stories[i + 1];
+                delete stories[i+1];
+                showText(i);
+            }
         }
+
+        setMark(target);
+        hideBurgerMenu();
     }
 }
 
 nav.addEventListener("click", checkStory);
 
-function hideOpenMenu(e) {
-    let target = e.target;
-    let computedStyle = getComputedStyle(nav).marginLeft;
+function hideOpenBurgerMenu(e) {
     nav.classList.toggle("menu-open");
     nav.classList.toggle("menu-close");
-
-
 }
 
 let burgerButton = document.getElementsByClassName("burger")[0];
 
-burgerButton.addEventListener("click", hideOpenMenu);
+burgerButton.addEventListener("click", hideOpenBurgerMenu);
