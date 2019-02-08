@@ -1,19 +1,21 @@
-const delayForAnswer = 1000;
-const delay = 500;
-const twoCards = 2;
-const winGame = 12;
+"use strict";
 
+const DELAY_FOR_ANSWER = 1000;
+const TWO_CARDS = 2;
+const WIN_GAME = 12;
+
+let delay = 500;
 let flipper = document.querySelector(".flipper");
 let allCards = document.querySelectorAll(".flipper > div");
 
 function showCards() {
-    setTimeout(function() {
+    setTimeout(() => {
         allCards.forEach(function(el) {
             el.classList.toggle("check");
         });
     }, delay * 1.5);
 
-    setTimeout(function() {
+    setTimeout(() => {
         allCards.forEach(function(el) {
             el.classList.toggle("check");
         });
@@ -25,7 +27,7 @@ function addCards() {
     let cards = [];
     cards = cards.concat(shuffleCards(), shuffleCards());
 
-    cards.forEach(function(el, i) {
+    cards.forEach((el, i) => {
         img[i].src = el;
     });
 }
@@ -35,7 +37,7 @@ function shuffleCards() {
         "images/man4.jpg", "images/man5.jpg", "images/man6.jpg"
     ];
 
-    return cards.sort(function() {
+    return cards.sort(() => {
         return 0.5 - Math.random();
     });
 }
@@ -43,7 +45,7 @@ function shuffleCards() {
 function checkGameWin() {
     let hideCards = document.querySelectorAll(".hide");
 
-    if (hideCards.length === winGame) {
+    if (hideCards.length === WIN_GAME) {
         let restart = document.createElement("div");
 
         restart.innerHTML = "!!!YOU WIN!!!\n<div class='win'>RESTART</div>";
@@ -53,17 +55,17 @@ function checkGameWin() {
         document.querySelector(".win").onclick = function() {
             restart.remove();
 
-            hideCards.forEach(function(el) {
+            hideCards.forEach((el) => {
                 el.classList.remove("hide");
                 el.classList.toggle("showme");
             });
 
-            setTimeout(function() {
+            setTimeout(() => {
                 addCards();
                 showCards();
             }, delay);
 
-            setTimeout(function() {
+            setTimeout(() => {
                 allCards.forEach(function(el) {
                     el.classList.toggle("showme");
                 });
@@ -72,22 +74,22 @@ function checkGameWin() {
     }
 }
 
-function checkTwoCards() {
+function checkTWO_CARDS() {
     let checkCards = document.querySelectorAll(".check img");
-    if (checkCards.length === twoCards) {
+    if (checkCards.length === TWO_CARDS) {
         if (checkCards[0].src === checkCards[1].src) {
-            setTimeout(function() {
+            setTimeout(() => {
                 checkCards[0].parentNode.classList.add("hide");
                 checkCards[1].parentNode.classList.add("hide");
                 checkCards[0].parentNode.classList.toggle("check");
                 checkCards[1].parentNode.classList.toggle("check");
             }, delay);
 
-            setTimeout(function() {
+            setTimeout(() => {
                 checkGameWin();
-            }, delayForAnswer);
+            }, DELAY_FOR_ANSWER);
         } else {
-            setTimeout(function() {
+            setTimeout(() => {
                 checkCards[0].parentNode.classList.toggle("check");
                 checkCards[1].parentNode.classList.toggle("check");
             }, delay);
@@ -104,7 +106,7 @@ function GameProces({ target }) {
 
         if (!target.parentNode.classList.contains("check") && elementsCheck.length < 2) {
             target.parentNode.classList.toggle("check");
-            checkTwoCards();
+            checkTWO_CARDS();
         }
     }
 }
