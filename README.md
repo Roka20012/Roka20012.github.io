@@ -8,4 +8,4 @@
 |
 [Demo memory-pair-game](https://roka20012.github.io/memory-pair-game/)
 |
-[Demo](https://roka20012.github.io/pop-up-menu/)
+[Demo pop-up-menu](https://roka20012.github.io/pop-up-menu/)
