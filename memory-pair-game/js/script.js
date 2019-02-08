@@ -95,7 +95,7 @@ function checkTwoCards() {
     }
 }
 
-addCards();
+window.onload = addCards();
 showCards();
 
 function GameProces({ target }) {
