@@ -11,7 +11,7 @@ function showCards() {
         allCards.forEach(function(el) {
             el.classList.toggle("check");
         });
-    }, delay);
+    }, delay * 1.5);
 
     setTimeout(function() {
         allCards.forEach(function(el) {
