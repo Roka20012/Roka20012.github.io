@@ -12,24 +12,6 @@ body {
 	background-color: #458;
 }
 
-@keyframes showCards {
-	0% {
-		transform: rotateY(0deg);
-	}
-
-	30% {
-		transform: rotateY(180deg);
-	}
-
-	80% {
-		transform: rotateY(180deg);
-	}
-
-	90% {
-		transform: rotateY(180deg);
-	}
-}
-
 .flipper {
 	perspective: 3000px;
 	position: relative;
@@ -42,9 +24,9 @@ body {
 
 	div {
 		@include simple;
-		animation: showCards  2s;
 		background-image: url(images/back.jpg);
 		background-size: cover;
+		background-color: #888;
 		left: 4px;
 		margin-bottom: 2px;
 		background-color: #fff;
@@ -68,11 +50,6 @@ body {
 	
 	.check {
 		transform: rotateY(180deg);
-	}
-
-	.back {
-		backface-visibility: hidden;
-		position: absolute;
 	}
 }
 
@@ -109,13 +86,6 @@ body {
 	transform: scale(1.2);
 }
 
-.hide-me {
-	opacity: 0;
-	left: 20%;
-	position: absolute;
-	top: 1%;
-	width: 820px;
-	margin: auto;
-	background-color: red;
-	height: 670px;
+.preload {
+	display: none;
 }

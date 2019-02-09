@@ -8,9 +8,9 @@ let delay = 500;
 let flipper = document.querySelector(".flipper");
 let allCards = document.querySelectorAll(".flipper > div");
 
-setTimeout(() => {
-    document.querySelector(".hide-me").remove();
-}, delay * 5);
+document.querySelector(".flipper ~ img").addEventListener("load",() => {
+    showCards();
+});
 
 function showCards() {
     setTimeout(() => {
@@ -122,7 +122,7 @@ function checkTwoCards() {
     }
 }
 
-changeCards();
+
 
 function GameProces({ target }) {
     if (target.tagName === "IMG") {
