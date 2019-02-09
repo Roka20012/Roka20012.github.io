@@ -8,12 +8,16 @@ let delay = 500;
 let flipper = document.querySelector(".flipper");
 let allCards = document.querySelectorAll(".flipper > div");
 
+setTimeout(() => {
+    document.querySelector(".hide-me").remove();
+}, delay * 5);
+
 function showCards() {
     setTimeout(() => {
         allCards.forEach(function(el) {
             el.classList.toggle("check");
         });
-    }, delay * 1.5);
+    }, delay);
 
     setTimeout(() => {
         allCards.forEach(function(el) {
@@ -23,6 +27,23 @@ function showCards() {
 }
 
 function addCards() {
+    let cards = [];
+    cards = cards.concat(shuffleCards(), shuffleCards());
+    let fragment = document.createDocumentFragment();
+
+    cards.forEach((el, i) => {
+        let div = document.createElement("div");
+        let img = document.createElement("img");
+        img.setAttribute("draggable", false);
+        img.src = el;
+        div.appendChild(img);
+        fragment.appendChild(div);
+    });
+
+    flipper.appendChild(fragment);
+}
+
+function changeCards() {
     let img = document.querySelectorAll(".flipper div img");
     let cards = [];
     cards = cards.concat(shuffleCards(), shuffleCards());
@@ -42,6 +63,28 @@ function shuffleCards() {
     });
 }
 
+function restartGame(restart, hideCards) {
+    return function() {
+        restart.remove();
+
+        hideCards.forEach((el) => {
+            el.classList.remove("hide");
+            el.classList.toggle("showme");
+        });
+
+        setTimeout(() => {
+            changeCards();
+            showCards();
+        }, delay);
+
+        setTimeout(() => {
+            allCards.forEach(function(el) {
+                el.classList.toggle("showme");
+            });
+        }, delay * 2);
+    };
+}
+
 function checkGameWin() {
     let hideCards = document.querySelectorAll(".hide");
 
@@ -52,29 +95,11 @@ function checkGameWin() {
         restart.classList.add("win-game");
         document.body.appendChild(restart);
 
-        document.querySelector(".win").onclick = function() {
-            restart.remove();
-
-            hideCards.forEach((el) => {
-                el.classList.remove("hide");
-                el.classList.toggle("showme");
-            });
-
-            setTimeout(() => {
-                addCards();
-                showCards();
-            }, delay);
-
-            setTimeout(() => {
-                allCards.forEach(function(el) {
-                    el.classList.toggle("showme");
-                });
-            }, delay * 2);
-        };
+        document.querySelector(".win").addEventListener("click", restartGame(restart, hideCards));
     }
 }
 
-function checkTWO_CARDS() {
+function checkTwoCards() {
     let checkCards = document.querySelectorAll(".check img");
     if (checkCards.length === TWO_CARDS) {
         if (checkCards[0].src === checkCards[1].src) {
@@ -97,8 +122,7 @@ function checkTWO_CARDS() {
     }
 }
 
-window.onload = addCards();
-showCards();
+changeCards();
 
 function GameProces({ target }) {
     if (target.tagName === "IMG") {
@@ -106,7 +130,7 @@ function GameProces({ target }) {
 
         if (!target.parentNode.classList.contains("check") && elementsCheck.length < 2) {
             target.parentNode.classList.toggle("check");
-            checkTWO_CARDS();
+            checkTwoCards();
         }
     }
 }

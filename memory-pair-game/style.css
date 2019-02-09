@@ -4,6 +4,21 @@ body {
   background-color: #458;
 }
 
+@keyframes showCards {
+  0% {
+    transform: rotateY(0deg);
+  }
+  30% {
+    transform: rotateY(180deg);
+  }
+  80% {
+    transform: rotateY(180deg);
+  }
+  90% {
+    transform: rotateY(180deg);
+  }
+}
+
 .flipper {
   perspective: 3000px;
   position: relative;
@@ -21,6 +36,7 @@ body {
   transform-style: preserve-3d;
   transition: all ease 0.4s;
   display: inline-grid;
+  animation: showCards  2s;
   background-image: url(images/back.jpg);
   background-size: cover;
   left: 4px;
@@ -37,10 +53,7 @@ body {
 .flipper img {
   position: relative;
   border-radius: 7%;
-  transform-style: preserve-3d;
-  transition: all ease 0.4s;
-  display: inline-grid;
-  position: fixed;
+  position: relative;
   user-select: none;
   transform: rotateY(180deg);
   width: 200px;
@@ -89,3 +102,13 @@ body {
   transform: scale(1.2);
 }
 
+.hide-me {
+  opacity: 0;
+  left: 20%;
+  position: absolute;
+  top: 1%;
+  width: 820px;
+  margin: auto;
+  background-color: red;
+  height: 670px;
+}
