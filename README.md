@@ -12,4 +12,6 @@
 |
 [Demo friends-app](https://roka20012.github.io/friends-app/)
 |
-[Demo about-me](https://roka20012.github.io/about-me)
+[Demo about-me](https://roka20012.github.io/about-me/)
+|
+[Demo shoes-card](https://roka20012.github.io/shoes-card/)
