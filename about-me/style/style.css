@@ -1,0 +1,471 @@
+/* ALL */
+* {
+    margin: 0px;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #e7e7e7;
+}
+
+/* HEADER */
+.top {
+    margin: 0px;
+    width: 100%;
+    height: 420px;
+    background-color: #11b57c;
+}
+
+.who-me {
+    padding-top: 60px;
+    margin-left: 14%;
+    color: #fff;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.occupation {
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navigation {
+    position: absolute;
+    top: 65px;
+    right: 15%;
+    display: flex;
+    list-style: none;
+}
+
+.navigation a {
+    position: relative;
+    transition: all ease 0.2s;
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navigation a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 20px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navigation a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+    width: 100%;
+}
+
+.introduce-myself {
+    margin-top: -200px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 71.5%;
+    height: 400px;
+    box-shadow: 0px 0px 20px -10px black;
+}
+
+.about-me {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    padding-left: 30px;
+}
+
+.introduction {
+    position: relative;
+    margin-top: 65px;
+    font-size: 35px;
+}
+
+.initials {
+    font-weight: bold;
+    color: #11b57c;
+}
+
+.initials::after {
+    position: absolute;
+    content: "Hello & Welcome";
+    font-size: 15px;
+    text-align: center;
+    line-height: 30px;
+    top: -40px;
+    left: 5px;
+    color: #fff;
+    background-color: #11b57c;
+    width: 140px;
+    height: 30px;
+    box-shadow: 0px 0px 20px -10px black;
+}
+
+.initials::before {
+    position: absolute;
+    content: "";
+    transform: rotate(45deg);
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    border-bottom: 17px solid #11b57c;
+    left: 122px;
+    top: -25px;
+}
+
+.about-me .occupation::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    margin-top: 35px;
+    height: 2px;
+    background-color: #e8e8e8;
+}
+
+.my-info {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.my-info td {
+    padding-top: 10px;
+}
+
+.my-info td:nth-child(2n) {
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 25px;
+}
+
+.social {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 65px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.social div {
+    transition: all ease 0.2s;
+    text-align: center;
+    font-size: 20px;
+    height: 65px;
+    color: white;
+    background-color: #11b57c;
+}
+
+.social div:hover {
+    cursor: pointer;
+    background-color: #0f9f6c;
+}
+
+.social div i {
+    margin-top: 24px;
+}
+/* MAIN */
+/* ABOUT ME */
+
+/* SKILLS */
+.skills-title {
+    font-size: 32px;
+    margin-top: 100px;
+    text-align: center;
+    color: #11b57c;
+}
+
+.skills-desctiption {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: flex;
+    width: 70%;
+    height: 350px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px -10px black;
+}
+
+.skills-about {
+    /* font-weight: bold; */
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    padding: 30px 40px 40px 40px;
+    width: 50%;
+}
+
+.skills-about p {
+    margin-top: 20px;
+}
+
+.skills-progress {
+    margin-top: 2px;
+    margin-left: -50px;
+    width: 50%;
+}
+
+.skills-progress li {
+    position: relative;
+    font-weight: bold;
+    font-size: 15px;
+    list-style: none;
+    margin-top: 48px;
+}
+
+.skills-progress li:before {
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 3px;
+    /* right: 50px; */
+    margin-top: 27px;
+    background-color: #11b57c;
+}
+
+.skills-progress li:after {
+    position: absolute;
+    content: "";
+    width: 30%;
+    height: 3px;
+    right: 50px;
+    margin-top: 27px;
+    background-color: #e7e7e7;
+}
+
+.skills-progress li:nth-child(1):after {
+    width: 30%;
+}
+
+.skills-progress li:nth-child(2):after {
+    width: 40%;
+}
+
+.skills-progress li:nth-child(3):after,
+.skills-progress li:nth-child(4):after {
+    width: 50%;
+}
+
+/* EDUCATION */
+.education-title {
+    font-size: 32px;
+    margin-top: 100px;
+    text-align: center;
+    color: #11b57c;
+}
+
+.timeline {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 70%;
+}
+
+.timeline::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    margin-left: -2px;
+    left: 50%;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px -1px black;
+    background-color: #fff;
+}
+
+.container {
+    width: 46%;
+    height: 170px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px -10px black;
+}
+
+.container.right {
+    margin-left: 53.8%;
+    margin-top: 20px;
+}
+
+.container.left {
+    margin-bottom: -140px;
+}
+
+.container.top1,
+.container.top2 {
+    margin-top: -20px;
+}
+
+.container.right::after {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    margin-top: -58px;
+    margin-left: -18px;
+    border-right: 18px solid #fff;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+}
+
+.container.left::after {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    left: 46%;
+    margin-top: -58px;
+    border-left: 18px solid #fff;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+}
+
+.container::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    left: 50%;
+    margin-left: -7px;
+    margin-top: 35px;
+    background-color: #11b57c;
+    border-radius: 50%;
+}
+
+.container h2 {
+    font-size: 22px;
+    margin-left: 30px;
+    padding-top: 30px;
+    color: #11b57c;
+}
+
+.container .label {
+    position: relative;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 30px;
+    padding-top: 10px;
+}
+
+.container .label::after {
+    content: "";
+    position: absolute;
+    margin-top: 40px;
+    width: 100px;
+    height: 35px;
+    left: 0px;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    background-color: #11b57c;
+    box-shadow: 0px 0px 15px -7px black;
+}
+
+.container .label1::after {
+    content: "2005-2007";
+}
+
+.container .label2::after {
+    content: "2007-2009";
+}
+
+.container .label3::after {
+    content: "2009-2011";
+}
+
+.container .label4::after {
+    content: "2011-2013";
+}
+
+.container .label5::after {
+    content: "2015-2017";
+}
+
+.container .label6::after {
+    content: "2017-2019";
+}
+
+.container .label::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    left: 88px;
+    margin-top: 28px;
+    border-left: 12px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 12px solid #11b57c;
+}
+
+/* FEEDBACK */
+.feedback-title {
+    font-size: 32px;
+    margin-top: 100px;
+    text-align: center;
+    color: #11b57c;
+}
+
+.feedback-form {
+    position: relative;
+    margin: 50px auto 0;
+    background: #11b57c;
+}
+
+.feedback-form {
+    padding: 50px;
+}
+.feedback-form input,
+.feedback-form textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    background: #e9eff6;
+    line-height: 40px;
+    border-width: 0;
+    border-radius: 2px;
+}
+.feedback-form input[type="submit"] {
+    margin-top: 30px;
+    background-color: #159262;
+    width: 20%;
+    color: white;
+    font-size: 14px;
+}
+
+.feedback-form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.feedback-form textarea {
+    line-height: 20px;
+    padding-top: 10px;
+    height: 110px;
+    resize: none;
+}
+/* FOOTER */
+footer {
+    background-color: #0f9f6c;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #fff;
+}
