@@ -12,4 +12,4 @@
 |
 [Demo friends-app](https://roka20012.github.io/friends-app/)
 |
-[Demo about-me](https://github.com/Roka20012/about-me)
+[Demo about-me](https://roka20012.github.io/about-me)
