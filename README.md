@@ -15,3 +15,5 @@
 [Demo about-me](https://roka20012.github.io/about-me/)
 |
 [Demo shoes-card](https://roka20012.github.io/shoes-card/)
+|
+[Demo dice-game](https://roka20012.github.io/dice-game/)
