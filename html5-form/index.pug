@@ -1,0 +1,171 @@
+doctype html
+html(lang="en")
+	head 
+		meta(charset="UTF-8")
+		title HTML 5 FORM
+		link(rel="stylesheet", href="style.css")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Nunito+Sans")
+	body
+		.container
+			.header
+				button.go-back GO BACK
+				img.logo-header(src="images/logo_header.png", alt="logo-header")
+				button.sign-in SIGN IN
+			.form
+				.form-header
+					.order
+						button.place-order
+							span PLACE ORDER
+						button.print-a-quote
+							span PRINT A QUOTE
+						.your-order YOUR ORDER
+						.order-info
+							.items
+								span ITEMS
+								span 2 documents
+							.details
+								span DETAILS
+								span 2 languages
+							.price
+								span PRICE
+								span $ 696.06
+							.delivery
+								span DELIVERY
+								span 48 hours*
+					.help-center
+						p.help-center-logo HELP CENTER
+						p.help-center-text If you need assistance while placing your order, contact one of our beloved Project Manager by phone or email
+						a.help-center-phone +971(0) 555 555
+						a.help-center-email help@qtest.com
+				.form-body-logo SELECT WHAT YOU WANT TO TRANSLATE
+				.select-document
+					label.custom-radio
+						input(name="document" value="1" type="radio")
+						div.website
+							img(src="images/img_1.png")
+							span Website
+					label.custom-radio
+						input(name="document" value="2" type="radio" checked)
+						div.documents
+							img(src="images/img_2.png")
+							span Documents
+					label.custom-radio
+						input(name="document" value="3" type="radio")
+						div.social-account
+							img(src="images/img_3.png")
+							span Social Account
+				.upload-documents
+					p Upload your documents
+					span (Doc, Docx, Text, PDF, Markdown)
+					label.upload-file
+						input(type="file")
+						div
+							p.text Upload a new file
+					table.files
+						tr
+							td FILE NAME 
+							td FILE SIZE
+							td NUMBER OF WORDS
+							td REMOVE
+						tr
+							td business_operations.docx
+							td 78kb
+							td 842
+							td trash icon
+						tr
+							td business_financial.docx
+							td 26kb
+							td 2,326
+							td trash icon
+				.laguages-paitings
+					p Choose your languages pairings
+					span.from-text FROM
+					select.from(name="from")
+						option(value="english" selected) English
+						option(value="arabic") Arabic
+						option(value="kurgdish") Ukraine
+					span.to-1-text TO
+					select.to-1(name="to")
+						option(value="english") English
+						option(value="arabic" selected) Arabic
+						option(value="kurgdish") Ukraine
+					select.to-2(name="to")
+						option(value="english") English
+						option(value="arabic") Arabic
+						option(value="kurgdish" selected) Ukraine
+					button.delete
+					button.add ADD
+				.select-tone
+					p Select your desired tone
+					label.custom-radio-2
+						input(name="tone" value="1" type="radio")
+						div.casual
+							span Friendly / Casual
+					label.custom-radio-2
+						input(name="tone" value="2" type="radio" checked="checked")
+						div.pro
+							span Corporate / Pro
+					label.custom-radio-2
+						input(name="tone" value="3" type="radio")
+						div.formal
+							span Media / Formal
+				.urgent
+					p Tell us how urgent this job is
+					input.time(type="range" min="0" max="20" value="10" step="10")
+					span.got-time I GOT TIME
+					span.average AVERAGE
+					span.yesterday YESTERDAY
+					.timeline-info
+						span.header-timeline-info TIMELINE INFO
+						p.text-timeline-info With an <span>AVERAGE</span> timeline set up, our expert translator can take a reasonable amount of time perfecting your translation
+				.payment-method
+					p.payment-method-text Sign up and choose a payment method
+					p.have-account Already have an account with us? <a href="#">Sign in</a>
+					input#data-name.information.data-full-name(required type="text" name="fullname" placeholder="Yarik Bachok Potik")
+					label.full-name(for="data-name") FULL NAME
+					input#data-email.information.data-email(required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+title="yarik@bachok.com" type="email" name="email" placeholder="yarik@bachok.potik")
+					label.email(for="data-email") EMAIL ADRESS
+					input#data-password.information.data-password(required  type="password" name="password" palceholder="********" )
+					label.password(pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*" title="Minimum 8 characters, UPPERCASE, lowercase and Number" for="data-password") CHOOSE A PASSWORD
+					.select-card
+						label.custom-radio-3
+							input(name="card" value="1" type="radio" checked="checked")
+							div.visa-mastercard
+								img(src="images/visa.png")
+						label.custom-radio-3
+							input(name="card" value="2" type="radio")
+							div.pay-pal
+								img(src="images/paypal.png")
+						label.custom-radio-3
+							input(name="card" value="3" type="radio")
+							div.amazon
+								img(src="images/amazone.png")
+					input#card-number.card.data-card-number(type="code" name="card-nubmer")
+					label.card-number(for="card-number") CARD NUMBER
+					input#expiry-date.card.data-expiry-date(type="date" name="expiry-date")
+					label.expiry-date(for="expiry-date") EXPIRY DATE
+					input#card-code.card.data-card-code(type="code" name="code")
+					label.card-code(for="card-code") CODE
+				label.agree(for="agree-terms") I agree to the <a href="#">Terms & Conditions<a>
+				input.agree-checkbox#agree-terms(type="checkbox")
+				button.place-order-footer.place-order PLACE ORDER
+				button.print-a-quote-footer.print-a-quote PRINT A QUOTE
+		footer
+			.footer
+				.what-we-do
+					h6 WHAT WE DO
+					p We provide a full range of laguage services including content development, document, website and social media accounts translations.
+				.our-main-office
+					h6 OUR MAIN OFFICE
+					p Dubal, UAE
+					p P.O Box: 502735
+					p Phone: <a href="tel:+971(0)44278128">+971(0)44278128</a>
+				.connect-with-us
+					h6 CONNECT WITH US
+					p.facebook Facebook
+					p.twitter Twitter
+					p.linkedin Linkedin
+				img.logo_footer(src="images/logo_footer.png", alt="footer-image")
+
+
