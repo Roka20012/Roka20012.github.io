@@ -5,7 +5,7 @@
 [Demo agency-real-agency](https://arcane-cliffs-75023.herokuapp.com/)
 - Technology
     - React.js
-    - JabaScript
+    - JavaScript
     - HTML
     - CSS
 
