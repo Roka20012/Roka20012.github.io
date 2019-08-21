@@ -15,6 +15,12 @@
     - JavaScript
     - HTML(pug)
     - CSS(scss)
+    
+## HTML&&CSS card
+[Demo shoes-card](https://roka20012.github.io/shoes-card/) | [src](https://github.com/Roka20012/Roka20012.github.io/tree/master/shoes-card) 
+- Technology
+    - HTML
+    - CSS
 
 ## Simple oop game by udacity course
 [Demo js-oop](https://roka20012.github.io/js-oop/) | [src](https://github.com/Roka20012/Roka20012.github.io/tree/master/js-oop)
@@ -52,12 +58,6 @@
 [Demo DOM-api-task](https://roka20012.github.io/dom_practical_task/) | [src](https://github.com/Roka20012/Roka20012.github.io/tree/master/dom_practical_task) 
 - Technology
     - JavaScript
-    - HTML
-    - CSS
-
-## HTML&&CSS card
-[Demo shoes-card](https://roka20012.github.io/shoes-card/) | [src](https://github.com/Roka20012/Roka20012.github.io/tree/master/shoes-card) 
-- Technology
     - HTML
     - CSS
 
