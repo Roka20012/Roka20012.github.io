@@ -2,17 +2,16 @@
 > Hi everyone! It's simple project hope you like this :)
 
 ## Blog post app
-[Demo blog-post-app](https://test-task-post-app.herokuapp.com/)
+[Demo blog-post-app](https://test-task-post-app.herokuapp.com/) | [src](https://github.com/Roka20012/test-tasks/tree/master/post-app/src)
 - Technology
     - Redux
     - React.js
     - JavaScript
     - HTML
     - CSS
-
-https://test-task-post-app.herokuapp.com/
+    
 ## Real State Agency
-[Demo agency-real-agency](https://arcane-cliffs-75023.herokuapp.com/)
+[Demo agency-real-agency](https://arcane-cliffs-75023.herokuapp.com/) | [src](https://github.com/Roka20012/agency-project/tree/master/src)
 - Technology
     - React.js
     - JavaScript
