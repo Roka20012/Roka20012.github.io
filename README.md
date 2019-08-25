@@ -1,6 +1,16 @@
 # Roka20012.github.io
 > Hi everyone! It's simple project hope you like this :)
 
+## Blog post app
+[Demo blog-post-app](https://test-task-post-app.herokuapp.com/)
+- Technology
+    - Redux
+    - React.js
+    - JavaScript
+    - HTML
+    - CSS
+
+https://test-task-post-app.herokuapp.com/
 ## Real State Agency
 [Demo agency-real-agency](https://arcane-cliffs-75023.herokuapp.com/)
 - Technology
