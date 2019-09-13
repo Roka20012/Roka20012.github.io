@@ -55,14 +55,69 @@
                 </div>
             </header>
 
-            <object
-                type="image/svg+xml"
-                data="./images/UI/burger.svg"
-                alt="burger-menu"
-                class="burger-menu"
-            >
-            </object>
-
+            <input
+                type="checkbox"
+                class="burger-menu__checkbox"
+                id="burger-menu__checkbox"
+            />
+            <label class="burger-menu" for="burger-menu__checkbox">
+                <img
+                    src="./images/UI/burger.svg"
+                    alt="burger-menu__icon"
+                    class="burger-menu__icon"
+                />
+                <img
+                    src="./images/UI/close.svg"
+                    alt="close-burger-menu__icon"
+                    class="close-burger-menu__icon"
+                />
+            </label>
+            <div class="left-menu">
+                <nav class="left-menu-navigation">
+                    <ul class="left-menu-item-list">
+                        <li class="left-menu-item-list__item">
+                            <a href="#" class="left-menu-item-list___item-link"
+                                >Головна</a
+                            >
+                        </li>
+                        <li class="left-menu-item-list__item">
+                            <a href="#" class="left-menu-item-list___item-link"
+                                >Топ</a
+                            >
+                        </li>
+                        <li class="left-menu-item-list__item">
+                            <a href="#" class="left-menu-item-list___item-link"
+                                >Огляди</a
+                            >
+                        </li>
+                        <li class="left-menu-item-list__item">
+                            <a href="#" class="left-menu-item-list___item-link"
+                                >Корисні статті</a
+                            >
+                        </li>
+                        <li class="left-menu-item-list__item">
+                            <a href="#" class="left-menu-item-list___item-link"
+                                >Новини</a
+                            >
+                        </li>
+                        <li class="left-menu-item-list__item">
+                            <a href="#" class="left-menu-item-list___item-link"
+                                >Авторська колонка</a
+                            >
+                        </li>
+                        <li class="left-menu-item-list__item">
+                            <a href="#" class="left-menu-item-list___item-link"
+                                >Інтерактив</a
+                            >
+                        </li>
+                        <li class="left-menu-item-list__item">
+                            <a href="#" class="left-menu-item-list___item-link"
+                                >Літклуб</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             <section class="poster">
                 <h3 class="poster-caption">Корисні статті</h3>
                 <h1 class="poster-text">
@@ -594,7 +649,7 @@
                 </div>
             </section>
             <section class="show-more">
-                <a href="#" class="show-more-link">
+                <button href="#" class="show-more-link">
                     <object
                         type="image/svg+xml"
                         data="./images/UI/rotate.svg"
@@ -603,7 +658,7 @@
                     >
                     </object>
                     <span class="show-more-text">Показати ще</span>
-                </a>
+                </button>
             </section>
             <footer class="footer">
                 <div class="footer__subscribe">

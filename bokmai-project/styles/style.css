@@ -28,6 +28,7 @@
     src: url("../fonts/ProximaNova-Semibold.ttf") format("truetype"); /* Safari, Android, iOS */
 }
 /* COLORS: #ebecf0,  #f94f4c, #ffc830*/
+/* media query 1312px */
 
 /* ALL */
 * {
@@ -41,6 +42,7 @@ body {
 }
 
 .container {
+    overflow: hidden;
     position: relative;
     width: 1295px;
     margin: 0 auto;
@@ -55,10 +57,13 @@ body {
 
 /* HEADER */
 .header {
+    z-index: 2;
+    position: relative;
     height: 50px;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #ebecf0;
 }
 
 .navigation {
@@ -73,8 +78,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #ebecf0;
-    border-right: 2px solid #ebecf0;
+    border-right: 1px solid #ebecf0;
 }
 
 .menu {
@@ -101,7 +105,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-left: 2px solid #ebecf0;
+    border-left: 1px solid #ebecf0;
 }
 
 .additional-options .search {
@@ -148,12 +152,89 @@ select {
 
 /* BURGER MENU*/
 
+.close-burger-menu__icon {
+    display: none;
+}
+
+.burger-menu__checkbox:checked ~ .left-menu {
+    margin-left: 48px;
+    transition: all ease 0.2s;
+    width: 316px;
+    padding: 0 0 150px 200px;
+}
+
+.burger-menu__checkbox:checked ~ .burger-menu .close-burger-menu__icon {
+    display: block;
+}
+
+.burger-menu__checkbox:checked ~ .burger-menu .burger-menu__icon {
+    display: none;
+}
+
+.burger-menu__checkbox {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
 .burger-menu {
+    height: 100%;
+    z-index: 2;
+    cursor: pointer;
     position: fixed;
-    position: sticky;
-    top: 20px;
-    margin-top: 39px;
+    top: 60px;
     margin-left: 10px;
+}
+
+/* LEFT MENU */
+
+.left-menu {
+    transition: all ease 0.2s;
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+    width: 0;
+    
+    padding: 0;
+    height: 100%;
+    top: 0px;
+    /* margin-left: 48px; */
+    background-color: #fff;
+}
+
+.left-menu-navigation {
+    margin-top: 170px;
+    position: absolute;
+    width: 200px;
+    left: 200px;
+}
+
+.left-menu-item-list {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: ProximaNova-Semibold;
+    list-style-type: none;
+}
+
+.left-menu-item-list__item {
+    margin: 23px 0;
+}
+
+.left-menu-item-list__item:hover::before {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: #ffc830;
+    margin-left: -44px;
+    margin-top: 2px;
+    width: 29px;
+    height: 2px;
+}
+
+.left-menu-item-list___item-link {
+    text-decoration: none;
+    color: #000;
 }
 
 /* POSTER */
@@ -165,9 +246,9 @@ select {
     height: 461px;
     border-left: 1px solid #ebecf0;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url("../images/common/bearBears.jpg");
-    background-size: 104%;
-    background-position: -50px -66px;
+        url("../images/common/bearBears.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .poster-caption {
@@ -401,14 +482,14 @@ select {
     float: right;
     width: 96.3%;
     height: 560px;
-    border-left: 1px solid #f7f7f9;
+    border-left: 1px solid #ebecf0;
     background: url("../images/common/cute-brain-cartoon.jpg") no-repeat right;
     background-size: 85.5%;
     background-position: 44px 99px;
 }
 
 .advices .advice {
-    border: 1px solid #f7f7f9;
+    border: 1px solid #ebecf0;
     position: relative;
     left: 77px;
     top: 175px;
@@ -530,7 +611,12 @@ select {
 
 .show-more-link {
     display: block;
-    width: 100%;
+    width: 130px;
+    height: 37px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
     text-align: center;
     text-decoration: none;
 }
@@ -559,6 +645,7 @@ select {
 /* FOOTER */
 
 .footer {
+    z-index: 1;
     margin-top: 70px;
     background-color: #ebecf0;
     color: #5b5664;
@@ -592,7 +679,7 @@ select {
     border-bottom: 1px solid #000;
     width: 300px;
     margin-top: 20px;
-    line-height: 50px;
+    line-height: 30px;
 }
 
 .footer-email__send-button {
