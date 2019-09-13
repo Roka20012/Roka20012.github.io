@@ -2,7 +2,7 @@
 > Hi everyone! It's simple project hope you like this :)
 
 ## Bokmai project
-[Demo bokmai-project](https://roka20012.github.io/bokmai-project) | [src](https://github.com/Roka20012/Roka20012.github.io/tree/master/bokmai-project)
+[Demo bokmai-project](https://roka20012.github.io/bokmai-project/) | [src](https://github.com/Roka20012/Roka20012.github.io/tree/master/bokmai-project)
 - Technology
     - HTML
     - CSS
