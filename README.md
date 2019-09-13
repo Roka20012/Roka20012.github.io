@@ -1,6 +1,12 @@
 # Roka20012.github.io
 > Hi everyone! It's simple project hope you like this :)
 
+## Bokmai project
+[Demo bokmai-project](https://roka20012.github.io/bokmai-project) | [src](https://github.com/Roka20012/Roka20012.github.io/tree/master/bokmai-project)
+- Technology
+    - HTML
+    - CSS
+
 ## Blog post app
 [Demo blog-post-app](https://test-task-post-app.herokuapp.com/) | [src](https://github.com/Roka20012/test-tasks/tree/master/post-app/src)
 - Technology

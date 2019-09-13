@@ -1,0 +1,629 @@
+@font-face {
+    font-family: "Lora-Bold";
+    src: url("../fonts/Lora-Bold.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: "Lora-BoldItalic";
+    src: url("../fonts/Lora-BoldItalic.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: "Lora-Regular";
+    src: url("../fonts/Lora-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: "ProximaNova-Extrabld";
+    src: url("../fonts/ProximaNova-Extrabld.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: "ProximaNova-Regular";
+    src: url("../fonts/ProximaNova-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: "ProximaNova-Semibold";
+    src: url("../fonts/ProximaNova-Semibold.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+/* COLORS: #ebecf0,  #f94f4c, #ffc830*/
+
+/* ALL */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #ebecf0;
+}
+
+.container {
+    position: relative;
+    width: 1295px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* HEADER */
+.header {
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-container {
+    width: 148px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ebecf0;
+    border-right: 2px solid #ebecf0;
+}
+
+.menu {
+    margin-top: 10px;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    margin-top: 10px;
+    margin-right: 34.5px;
+}
+
+.menu ul li {
+    margin-left: 23px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.additional-options {
+    width: 105px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-left: 2px solid #ebecf0;
+}
+
+.additional-options .search {
+    cursor: pointer;
+    margin-left: 2.5px;
+    margin-top: 2px;
+}
+
+.additional-options .bookmark {
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 4px;
+}
+
+/* IE11 */
+select::-ms-expand {
+    display: none;
+}
+
+select {
+    -webkit-appearance: none; /* Webkit */
+    -moz-appearance: none; /* FF */
+    -ms-appearance: none; /* Edge */
+    appearance: none; /* Future */
+}
+
+.select-recipient {
+    font-family: ProximaNova-Semibold;
+    width: 111px;
+    height: 28px;
+    margin-left: 22px;
+    margin-top: 12px;
+    border-radius: 20px;
+    background-color: #ffc830;
+    border: none;
+    font-size: 14px;
+    padding-left: 16px;
+    padding-top: -1px;
+    background: url("../images/UI/chevron-down-solid.svg") no-repeat right
+        #ffc830;
+    background-size: 12px 12px;
+    background-position-x: 85px;
+}
+
+/* BURGER MENU*/
+
+.burger-menu {
+    position: fixed;
+    position: sticky;
+    top: 20px;
+    margin-top: 39px;
+    margin-left: 10px;
+}
+
+/* POSTER */
+
+.poster {
+    position: relative;
+    float: right;
+    width: 96.3%;
+    height: 461px;
+    border-left: 1px solid #ebecf0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../images/common/bearBears.jpg");
+    background-size: 104%;
+    background-position: -50px -66px;
+}
+
+.poster-caption {
+    color: #ffc830;
+    text-transform: uppercase;
+    position: relative;
+    left: 66px;
+    top: 126px;
+    font-size: 13px;
+    word-spacing: 1px;
+}
+
+.poster-text {
+    position: relative;
+    left: 66px;
+    top: 114px;
+    font-size: 40px;
+    word-wrap: wrap;
+    word-spacing: 3px;
+    letter-spacing: 0.1px;
+    line-height: 41px;
+    width: 570px;
+    color: #fff;
+}
+
+.poster-info {
+    position: relative;
+    width: 204px;
+    display: flex;
+    font-size: 11px;
+    left: 66px;
+    top: 111px;
+}
+
+.poster-views {
+    margin-left: 56px;
+}
+
+.poster-additional-info {
+    color: #fff;
+    margin-top: 4px;
+    margin-left: 2px;
+    word-spacing: 5px;
+}
+
+.poster-actions {
+    position: relative;
+    width: 120px;
+    justify-content: space-between;
+    align-items: center;
+    top: 137px;
+    left: 65px;
+}
+
+.read {
+    font-family: ProximaNova-Semibold;
+    border-radius: 20px;
+    background-color: #ffc830;
+    border: none;
+    width: 80px;
+    height: 28px;
+    font-size: 14px;
+}
+
+/* ARTICLE REVIEWS SECTION */
+
+.article-reviews {
+    position: relative;
+    border-left: 1px solid #ebecf0;
+    float: right;
+    width: 96.3%;
+    height: 425px;
+}
+
+.article-caption {
+    position: absolute;
+    right: 275px;
+    letter-spacing: 1px;
+    top: 86px;
+    font-size: 12px;
+    color: #ffc830;
+}
+
+.snail-img {
+    box-sizing: border-box;
+    position: absolute;
+    left: 45px;
+    top: 84px;
+    width: 533px;
+    height: 237px;
+    border-bottom: 4px solid #d44141;
+}
+
+.article-statistics {
+    width: 200px;
+    font-size: 12px;
+    position: relative;
+    left: 27px;
+    top: -62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-views {
+    margin-left: 64px;
+}
+
+.article-text {
+    color: #5b5664;
+    width: 480px;
+    line-height: 36px;
+    word-spacing: 2.5px;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    left: 27px;
+    top: -31px;
+}
+
+.article-read {
+    position: relative;
+    height: 28px;
+    left: 27px;
+    top: -8px;
+}
+
+.post-review {
+    background-color: #fff;
+    position: absolute;
+    top: 116px;
+    right: 275px;
+    border: 1px solid black;
+    width: 423px;
+    height: 229px;
+}
+
+.post-review::before {
+    display: block;
+    content: "";
+    margin-top: 87px;
+    margin-left: -16px;
+    background-color: #d44141;
+    width: 29px;
+    height: 4px;
+}
+
+.poster-bookmark {
+    position: absolute;
+    right: 0px;
+}
+
+.poster-bookmark-article {
+    position: absolute;
+    right: 19px;
+    bottom: -14px;
+}
+
+/* SECTION USEFUL ARTICLES */
+
+.articles {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    border-left: 1px solid #ebecf0;
+    float: right;
+    width: 96.3%;
+    height: 350px;
+}
+
+.article-poster {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 323px;
+    height: 90%;
+}
+
+.articles-poster-bookmark {
+    position: relative;
+    left: 135px;
+    top: -16px;
+}
+
+.article-poster-caption {
+    position: relative;
+    color: #ffc830;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: left;
+    top: 6px;
+    left: 2px;
+    width: 100%;
+}
+
+.article-poster-info {
+    position: relative;
+    width: 224px;
+    display: flex;
+    align-self: flex-start;
+    top: -20px;
+    font-size: 11px;
+}
+
+.articles .poster-additional-info {
+    color: #000;
+}
+
+.poster-img {
+    margin-top: 24px;
+    width: 100%;
+    height: 193px;
+}
+
+.poster-describe {
+    position: relative;
+    word-wrap: wrap;
+    top: -13px;
+    width: 100%;
+    letter-spacing: -0.2px;
+    word-spacing: 1.4px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ADVICE SECTION */
+
+.advices {
+    float: right;
+    width: 96.3%;
+    height: 560px;
+    border-left: 1px solid #f7f7f9;
+    background: url("../images/common/cute-brain-cartoon.jpg") no-repeat right;
+    background-size: 85.5%;
+    background-position: 44px 99px;
+}
+
+.advices .advice {
+    border: 1px solid #f7f7f9;
+    position: relative;
+    left: 77px;
+    top: 175px;
+    width: 607px;
+    height: 230px;
+}
+
+.advices .advice::before {
+    display: block;
+    content: "";
+    margin-top: 87px;
+    margin-left: -16px;
+    background-color: #d44141;
+    width: 29px;
+    height: 4px;
+}
+
+.advices .article-poster-info {
+    position: relative;
+    top: -62px;
+    left: 30px;
+}
+
+.advices .poster-additional-info {
+    color: #000;
+}
+
+.advices .read {
+    top: -15px;
+    left: 28px;
+}
+
+.advices .articles-poster-bookmark {
+    position: relative;
+    left: 482px;
+    top: 38px;
+}
+
+.advice-describe {
+    color: #5b5664;
+    position: relative;
+    word-wrap: wrap;
+    top: -28px;
+    left: 28px;
+    width: 500px;
+    word-spacing: 4px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.advices-caption {
+    position: relative;
+    left: 45px;
+    top: 34px;
+    color: #ffc830;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: left;
+}
+
+/* REVIEWS SECTION */
+
+.articles.articles-next {
+    border-left: 1px solid #f7f7f9;
+    background-color: #f7f7f9;
+}
+
+/* AUTHOR COLUMN SECTION */
+
+.article-reviews--reverse .article-statistics {
+    width: 220px;
+    left: 91px;
+}
+
+.article-reviews--reverse .article-caption {
+    top: 51px;
+    left: 172px;
+}
+
+.article-reviews--reverse .post-review {
+    top: 81px;
+    left: 174px;
+}
+
+.article-reviews--reverse .snail-img {
+    top: 51px;
+    left: 578px;
+}
+
+.article-reviews--reverse .article-text {
+    text-align: right;
+    left: -87px;
+}
+
+.article-reviews--reverse .post-review::before {
+    display: block;
+    content: "";
+    margin-top: 86px;
+    margin-left: 410px;
+    background-color: #f94f4c;
+    width: 29px;
+    height: 4px;
+}
+
+.article-reviews--reverse .poster-bookmark-article {
+    position: absolute;
+    left: 12px;
+    bottom: -14px;
+}
+
+.article-reviews--reverse .article-read {
+    position: relative;
+    height: 28px;
+    left: 315px;
+    top: -7px;
+}
+
+/* SHOW MORE SECTION */
+
+.show-more-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.rotate {
+    position: relative;
+    top: 5px;
+    transform: rotate(-105deg);
+}
+
+.show-more-text {
+    font-weight: bold;
+}
+
+.show-more {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    border-left: 1px solid #ebecf0;
+    float: right;
+    width: 96.3%;
+    height: 50px;
+}
+
+/* FOOTER */
+
+.footer {
+    margin-top: 70px;
+    background-color: #ebecf0;
+    color: #5b5664;
+    position: relative;
+    width: 100%;
+    height: 172px;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__about-text {
+    width: 40%;
+}
+
+.footer__subscribe-text {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.footer__subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer-email__input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 300px;
+    margin-top: 20px;
+    line-height: 50px;
+}
+
+.footer-email__send-button {
+    position: relative;
+    border: none;
+    background: none;
+    margin-left: -50px;
+    margin-top: 25px;
+}
+
+.footer-email {
+    display: flex;
+}
+
+.social-media-section {
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    height: 110px;
+    flex-direction: column;
+}
+
+.social-media__links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.footer__about-text {
+    width: 350px;
+    font-size: 13px;
+    line-height: 20px;
+}
