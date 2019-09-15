@@ -1,0 +1,59 @@
+
+.article-reviews--reverse .article-statistics {
+    margin-top: 90px;
+    width: 200px;
+    left: 90px;
+}
+
+.article-reviews--reverse .article-caption {
+    top: -31px;
+    left: 0px;
+}
+
+.article-reviews--reverse .post-review {
+    width: 55%;
+    position: absolute;
+    left: 350px;
+    top: -51px;
+}
+
+.article-reviews--reverse .snail-img {
+    position: relative;
+    top: -21px;
+    left: 258px;
+    left: 20%;
+}
+
+.article-reviews--reverse .article-text {
+    text-align: right;
+    left: -23%;
+}
+
+.article-reviews--reverse .post-review::before {
+    display: block;
+    content: "";
+    margin-top: 86px;
+    right: -15px;
+    position: absolute;
+    background-color: #f94f4c;
+    width: 29px;
+    height: 4px;
+}
+
+.article-reviews--reverse .article-statistics {
+    margin-top: 90px;
+    width: 200px;
+}
+
+.article-reviews--reverse .poster-bookmark-article {
+    position: absolute;
+    left: 12px;
+    bottom: -14px;
+}
+
+.article-reviews--reverse .article-read {
+    position: absolute;
+    height: 28px;
+    left: 70%;
+    top: 190px;
+}

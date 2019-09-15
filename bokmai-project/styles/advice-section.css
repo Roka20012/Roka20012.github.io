@@ -1,0 +1,70 @@
+.advices {
+    width: 100%;
+    height: 560px;
+    background: url("../public/images/common/cute-brain-cartoon.jpg") no-repeat right;
+    background-size: cover;
+    background-position: center;
+}
+
+.advices .advice {
+    border: 1px solid #ebecf0;
+    position: relative;
+    top: 175px;
+    width: 70%;
+    margin: 0 auto;
+    min-height: 230px;
+}
+
+.advices .advice::before {
+    display: block;
+    content: "";
+    margin-top: 87px;
+    margin-left: -16px;
+    background-color: #d44141;
+    width: 29px;
+    height: 4px;
+}
+
+.advices .article-poster-info {
+    position: relative;
+    top: -62px;
+    left: 30px;
+}
+
+.advices .poster-additional-info {
+    color: #000;
+}
+
+.advices .read {
+    top: -15px;
+    left: 28px;
+}
+
+.advices .articles-poster-bookmark {
+    position: absolute;
+    left: 77%;
+    top: 38px;
+    top: 96%;
+}
+
+.advice-describe {
+    color: #5b5664;
+    position: relative;
+    word-wrap: wrap;
+    top: -28px;
+    left: 28px;
+    padding-right: 30px;
+    word-spacing: 4px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.advices-caption {
+    position: relative;
+    left: 84px;
+    top: 34px;
+    color: #ffc830;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: left;
+}

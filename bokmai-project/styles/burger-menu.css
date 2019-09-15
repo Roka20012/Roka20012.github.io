@@ -1,0 +1,45 @@
+.burger-menu__close-icon {
+    display: none;
+}
+
+.burger-menu__checkbox:checked ~ .left-menu {
+    transition: all ease 0.2s;
+    width: 316px;
+    padding: 0 0 150px 200px;
+}
+
+.burger-menu__checkbox:checked ~ .burger-menu .burger-menu__close-icon {
+    display: block;
+}
+
+.burger-menu__checkbox:checked ~ .burger-menu .burger-menu__icon {
+    display: none;
+}
+
+.burger-menu__checkbox {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.burger-menu {
+    z-index: 2;
+    cursor: pointer;
+    position: fixed;
+    top: 65px;
+    margin-left: 22px;
+    margin-left: 0.5%;
+}
+
+.burger-menu::after {
+    content: "";
+    display: block;
+    background-color: #ebecf0;
+    height: 120%;
+    width: 1px;
+    position: fixed;
+    clear: both;
+    left: 40px;
+    top: 0px;
+}

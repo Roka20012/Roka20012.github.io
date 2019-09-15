@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Lora-Bold";
+    src: url("../public/fonts/Lora-Bold.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: "Lora-BoldItalic";
+    src: url("../public/fonts/Lora-BoldItalic.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: "Lora-Regular";
+    src: url("../public/fonts/Lora-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: "ProximaNova-Extrabld";
+    src: url("../public/fonts/ProximaNova-Extrabld.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: "ProximaNova-Regular";
+    src: url("../public/fonts/ProximaNova-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: "ProximaNova-Semibold";
+    src: url("../public/fonts/ProximaNova-Semibold.ttf") format("truetype"); /* Safari, Android, iOS */
+}

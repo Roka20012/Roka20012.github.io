@@ -1,0 +1,143 @@
+.article-reviews {
+    display: block;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.header {
+    display: none;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.header-mobile {
+    display: block;
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    width: 100%;
+    background-color: #fff;
+    font-family: ProximaNova-Regular;
+}
+
+.header-mobile-top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header-mobile-select-recipient__option {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.header-mobile-select-recipient__option:checked
+    + .header-mobile-select-recipient {
+    box-shadow: inset 0 -3px #ffc830;
+}
+
+.header-mobile-select-recipient {
+    line-height: 30px;
+    transition: all ease 0.2s;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-mobile-burger-menu {
+    cursor: pointer;
+    z-index: 2;
+}
+
+.header-mobile-burger-menu__close-icon {
+    display: none;
+}
+
+.burger-menu__checkbox:checked
+    + .header-mobile
+    .header-mobile-burger-menu__close-icon {
+    display: block;
+}
+
+.burger-menu__checkbox:checked
+    + .header-mobile
+    .header-mobile-burger-menu__icon {
+    display: none;
+}
+
+.burger-menu__checkbox:checked ~ .left-menu {
+    height: 100vh;
+    padding: 0;
+    width: 100%;
+}
+
+.left-menu-item-list {
+    left: 0px;
+}
+
+.left-menu {
+    top: 90px;
+    width: 100%;
+    height: 0px;
+}
+
+.left-menu-navigation {
+    left: 30px;
+    margin-top: 0px;
+}
+
+.articles {
+    padding: 0;
+}
+
+.snail-img,
+.article-reviews--reverse .snail-img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.post-review {
+    width: 100%;
+    margin: 0 auto;
+    right: 0;
+    top: 0;
+}
+
+.article-text {
+    width: 95%;
+}
+
+.article-reviews--reverse .post-review {
+    position: relative;
+    width: 100%;
+    left: 0px;
+}
+
+.article-reviews--reverse .article-text {
+    left: 0px;
+}
+.article-reviews--reverse .article-read {
+    position: relative;
+    left: 80%;
+    top: -10px;
+}
+
+.article-reviews--reverse .post-review::before {
+    margin-left: 96%;
+}
+
+.advices .advice {
+    left: 0%;
+}

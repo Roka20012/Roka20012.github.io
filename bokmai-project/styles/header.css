@@ -1,0 +1,95 @@
+.header {
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ebecf0;
+}
+
+.navigation {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo-container {
+    width: 148px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #ebecf0;
+}
+
+.navigation-menu {
+    margin-top: 10px;
+}
+
+.navigation-menu-list {
+    list-style-type: none;
+    display: flex;
+    margin-top: 10px;
+    margin-right: 34.5px;
+}
+
+.navigation-menu-list__item {
+    margin-left: 23px;
+    font-size: 13px;
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.additional-options {
+    width: 105px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-left: 1px solid #ebecf0;
+}
+
+.additional-options__search {
+    cursor: pointer;
+    margin-left: 2.5px;
+    margin-top: 2px;
+}
+
+.additional-options__bookmark {
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 4px;
+}
+
+/* IE11 */
+select::-ms-expand {
+    display: none;
+}
+
+select {
+    -webkit-appearance: none; /* Webkit */
+    -moz-appearance: none; /* FF */
+    -ms-appearance: none; /* Edge */
+    appearance: none; /* Future */
+}
+
+.navigation__select-recipient {
+    font-family: ProximaNova-Semibold;
+    width: 111px;
+    height: 28px;
+    margin-left: 22px;
+    margin-top: 12px;
+    border-radius: 20px;
+    background-color: #ffc830;
+    border: none;
+    font-size: 14px;
+    padding-left: 16px;
+    padding-top: -1px;
+    background: url("../public/images/UI/chevron-down-solid.svg") no-repeat right
+        #ffc830;
+    background-size: 12px 12px;
+    background-position-x: 85px;
+}

@@ -1,0 +1,71 @@
+.poster {
+    position: relative;
+    width: 100%;
+    height: 461px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../public/images/common/bearBears.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.poster-caption {
+    color: #ffc830;
+    text-transform: uppercase;
+    position: relative;
+    left: 66px;
+    top: 126px;
+    font-size: 13px;
+    word-spacing: 1px;
+}
+
+.poster-text {
+    position: relative;
+    left: 66px;
+    top: 114px;
+    font-size: 40px;
+    word-wrap: wrap;
+    word-spacing: 3px;
+    letter-spacing: 0.1px;
+    line-height: 41px;
+    width: 80%;
+    color: #fff;
+}
+
+.poster-info {
+    position: relative;
+    width: 204px;
+    display: flex;
+    font-size: 11px;
+    left: 66px;
+    top: 111px;
+}
+
+.poster-views {
+    margin-left: 56px;
+}
+
+.poster-additional-info {
+    color: #fff;
+    margin-top: 4px;
+    margin-left: 2px;
+    word-spacing: 5px;
+}
+
+.poster-actions {
+    position: relative;
+    width: 120px;
+    justify-content: space-between;
+    align-items: center;
+    top: 137px;
+    left: 65px;
+}
+
+.read {
+    font-family: ProximaNova-Semibold;
+    border-radius: 20px;
+    background-color: #ffc830;
+    border: none;
+    width: 80px;
+    height: 28px;
+    font-size: 14px;
+}

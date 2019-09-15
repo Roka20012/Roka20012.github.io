@@ -1,0 +1,21 @@
+@import "./styles/normalize.css";
+@import "./styles/fonts.css";
+@import "./styles/all.css";
+@import "./styles/container.css";
+@import "./styles/header.css";
+@import "./styles/burger-menu.css";
+@import "./styles/left-menu.css";
+@import "./styles/poster.css";
+@import "./styles/article-reviews-section.css";
+@import "./styles/section-useful-articles.css";
+@import "./styles/advice-section.css";
+@import "./styles/reviews-section.css";
+@import "./styles/show-more-section.css";
+@import "./styles/author-column-section.css";
+@import "./styles/footer.css";
+@import "./styles/header-mobile.css";
+
+@import "./styles/mobstyle.css" screen and (max-width: 670px);
+
+/* FOOTER */
+
