@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Document</title>
-        <!-- <link rel="stylesheet" href="./styles/reset.css"> -->
         <link rel="stylesheet" href="./styles/normalize.css" />
         <link rel="stylesheet" href="./styles/style.css" />
         <script src="https://kit.fontawesome.com/e7c07af4d6.js"></script>
@@ -13,7 +12,7 @@
     <body>
         <div class="container">
             <header class="header">
-                <div class="logo-container">
+                <div class="header__logo-container">
                     <object
                         type="image/svg+xml"
                         data="./images/Logo.svg"
@@ -24,15 +23,24 @@
                 </div>
 
                 <div class="navigation">
-                    <select class="select-recipient">
+                    <select
+                        class="navigation__select-recipient"
+                        id="navigation__select-recipient"
+                    >
                         <option value="Для усіх">Для усіх</option>
                         <option value="Для не усіх">Для не усіх</option>
                     </select>
-                    <nav class="menu">
-                        <ul>
-                            <li>Про букмоль</li>
-                            <li>Співпраця</li>
-                            <li>Підтримка</li>
+                    <nav class="navigation-menu">
+                        <ul class="navigation-menu-list">
+                            <li class="navigation-menu-list__item">
+                                Про букмоль
+                            </li>
+                            <li class="navigation-menu-list__item">
+                                Співпраця
+                            </li>
+                            <li class="navigation-menu-list__item">
+                                Підтримка
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -41,7 +49,8 @@
                         type="image/svg+xml"
                         data="./images/UI/magnifier.svg"
                         alt="magnifier"
-                        class="search"
+                        class="additional-options__search"
+                        id="additional-options__search"
                     >
                     </object>
 
@@ -49,17 +58,87 @@
                         type="image/svg+xml"
                         data="./images/UI/bookmark.svg"
                         alt="bookmark"
-                        class="bookmark"
+                        class="additional-options__bookmark"
+                        id="additional-options__bookmark"
                     >
                     </object>
                 </div>
             </header>
-
             <input
                 type="checkbox"
                 class="burger-menu__checkbox"
                 id="burger-menu__checkbox"
             />
+            <header class="header-mobile">
+                <div class="header-mobile-top-header">
+                    <label
+                        class="header-mobile-burger-menu"
+                        for="burger-menu__checkbox"
+                    >
+                        <img
+                            src="./images/UI/burger.svg"
+                            alt="header-mobile-burger-men__icon"
+                            class="header-mobile-burger-menu__icon"
+                        />
+                        <img
+                            src="./images/UI/close.svg"
+                            alt="header-mobile-burger-menu__close-icon"
+                            class="header-mobile-burger-menu__close-icon"
+                        />
+                    </label>
+                    <object
+                        type="image/svg+xml"
+                        data="./images/Logo.svg"
+                        alt="logo"
+                        class="header-mobile__logo"
+                    >
+                    </object>
+                    <object
+                        type="image/svg+xml"
+                        data="./images/UI/magnifier.svg"
+                        alt="magnifier"
+                        class="header-mobile__search"
+                        id="header-mobile__search"
+                    >
+                    </object>
+                </div>
+                <div class="header-mobile-select-recipient">
+                    <input
+                        type="radio"
+                        name="recipient"
+                        id="everyone"
+                        class="header-mobile-select-recipient__option"
+                        value="everyone"
+                        checked
+                    />
+                    <label for="everyone" class="header-mobile-select-recipient"
+                        >ДЛЯ УСІХ</label
+                    >
+
+                    <input
+                        type="radio"
+                        name="recipient"
+                        id="baby"
+                        class="header-mobile-select-recipient__option"
+                        value="BABY SIDE"
+                    />
+                    <label for="baby" class="header-mobile-select-recipient"
+                        >BABY SIDE</label
+                    >
+
+                    <input
+                        type="radio"
+                        name="recipient"
+                        id="teen"
+                        class="header-mobile-select-recipient__option"
+                        value="TEEN SIDE"
+                    />
+                    <label for="teen" class="header-mobile-select-recipient"
+                        >TEEN SIDE</label
+                    >
+                </div>
+            </header>
+
             <label class="burger-menu" for="burger-menu__checkbox">
                 <img
                     src="./images/UI/burger.svg"
@@ -68,8 +147,8 @@
                 />
                 <img
                     src="./images/UI/close.svg"
-                    alt="close-burger-menu__icon"
-                    class="close-burger-menu__icon"
+                    alt="burger-menu__close-icon"
+                    class="burger-menu__close-icon"
                 />
             </label>
             <div class="left-menu">
@@ -162,8 +241,8 @@
                     alt="snail"
                     class="snail-img"
                 />
-                <h3 class="article-caption">ОГЛЯДИ</h3>
                 <article class="post-review">
+                    <h3 class="article-caption">ОГЛЯДИ</h3>
                     <div class="article-statistics">
                         <object
                             type="image/svg+xml"
@@ -277,7 +356,7 @@
                         </p>
                     </div>
                     <p class="poster-describe">
-                        Вихідні з дітьми: 9-10 вересня
+                        Вихідні з дітьми: 9-10 вересня. Буде весело!
                     </p>
                 </div>
                 <div class="article-poster">
@@ -317,7 +396,7 @@
                         </p>
                     </div>
                     <p class="poster-describe">
-                        Літклуб Букмоль: розклад на квітень
+                        Літклуб Букмоль: розклад на квітень. Приходьте!
                     </p>
                 </div>
             </section>
@@ -487,8 +566,8 @@
                     alt="snail"
                     class="snail-img"
                 />
-                <h3 class="article-caption">АВТОРСЬКА КОЛОНКА</h3>
                 <article class="post-review">
+                    <h3 class="article-caption">АВТОРСЬКА КОЛОНКА</h3>
                     <div class="article-statistics">
                         <object
                             type="image/svg+xml"

@@ -27,8 +27,6 @@
     font-family: "ProximaNova-Semibold";
     src: url("../fonts/ProximaNova-Semibold.ttf") format("truetype"); /* Safari, Android, iOS */
 }
-/* COLORS: #ebecf0,  #f94f4c, #ffc830*/
-/* media query 1312px */
 
 /* ALL */
 * {
@@ -44,7 +42,7 @@ body {
 .container {
     overflow: hidden;
     position: relative;
-    width: 1295px;
+    width: 100%;
     margin: 0 auto;
     background-color: #fff;
 }
@@ -57,8 +55,9 @@ body {
 
 /* HEADER */
 .header {
-    z-index: 2;
-    position: relative;
+    z-index: 3;
+    position: fixed;
+    width: 100%;
     height: 50px;
     background-color: #fff;
     display: flex;
@@ -73,7 +72,7 @@ body {
     justify-content: space-between;
 }
 
-.logo-container {
+.header__logo-container {
     width: 148px;
     display: flex;
     justify-content: center;
@@ -81,20 +80,21 @@ body {
     border-right: 1px solid #ebecf0;
 }
 
-.menu {
+.navigation-menu {
     margin-top: 10px;
 }
 
-.menu ul {
+.navigation-menu-list {
     list-style-type: none;
     display: flex;
     margin-top: 10px;
     margin-right: 34.5px;
 }
 
-.menu ul li {
+.navigation-menu-list__item {
     margin-left: 23px;
     font-size: 13px;
+    font-size: 0.8em;
     font-weight: bold;
     letter-spacing: 1px;
 }
@@ -108,13 +108,13 @@ body {
     border-left: 1px solid #ebecf0;
 }
 
-.additional-options .search {
+.additional-options__search {
     cursor: pointer;
     margin-left: 2.5px;
     margin-top: 2px;
 }
 
-.additional-options .bookmark {
+.additional-options__bookmark {
     cursor: pointer;
     margin-right: 5px;
     margin-top: 4px;
@@ -132,7 +132,7 @@ select {
     appearance: none; /* Future */
 }
 
-.select-recipient {
+.navigation__select-recipient {
     font-family: ProximaNova-Semibold;
     width: 111px;
     height: 28px;
@@ -152,18 +152,17 @@ select {
 
 /* BURGER MENU*/
 
-.close-burger-menu__icon {
+.burger-menu__close-icon {
     display: none;
 }
 
 .burger-menu__checkbox:checked ~ .left-menu {
-    margin-left: 48px;
     transition: all ease 0.2s;
     width: 316px;
     padding: 0 0 150px 200px;
 }
 
-.burger-menu__checkbox:checked ~ .burger-menu .close-burger-menu__icon {
+.burger-menu__checkbox:checked ~ .burger-menu .burger-menu__close-icon {
     display: block;
 }
 
@@ -179,12 +178,24 @@ select {
 }
 
 .burger-menu {
-    height: 100%;
     z-index: 2;
     cursor: pointer;
     position: fixed;
-    top: 60px;
-    margin-left: 10px;
+    top: 65px;
+    margin-left: 22px;
+    margin-left: 0.5%;
+}
+
+.burger-menu::after {
+    content: "";
+    display: block;
+    background-color: #ebecf0;
+    height: 120%;
+    width: 1px;
+    position: fixed;
+    clear: both;
+    left: 40px;
+    top: 0px;
 }
 
 /* LEFT MENU */
@@ -194,12 +205,9 @@ select {
     position: fixed;
     z-index: 1;
     overflow: hidden;
-    width: 0;
-    
-    padding: 0;
     height: 100%;
+    width: 40px;
     top: 0px;
-    /* margin-left: 48px; */
     background-color: #fff;
 }
 
@@ -241,10 +249,8 @@ select {
 
 .poster {
     position: relative;
-    float: right;
-    width: 96.3%;
+    width: 100%;
     height: 461px;
-    border-left: 1px solid #ebecf0;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url("../images/common/bearBears.jpg") no-repeat;
     background-size: cover;
@@ -270,7 +276,7 @@ select {
     word-spacing: 3px;
     letter-spacing: 0.1px;
     line-height: 41px;
-    width: 570px;
+    width: 80%;
     color: #fff;
 }
 
@@ -314,36 +320,38 @@ select {
 }
 
 /* ARTICLE REVIEWS SECTION */
-
 .article-reviews {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     position: relative;
-    border-left: 1px solid #ebecf0;
-    float: right;
-    width: 96.3%;
-    height: 425px;
+    width: 75.3%;
+    margin: 0 auto;
+    padding: 45px;
 }
 
 .article-caption {
     position: absolute;
-    right: 275px;
     letter-spacing: 1px;
     top: 86px;
+    right: 255px;
+    top: -31px;
+    right: 0px;
     font-size: 12px;
     color: #ffc830;
 }
 
 .snail-img {
     box-sizing: border-box;
-    position: absolute;
-    left: 45px;
-    top: 84px;
-    width: 533px;
-    height: 237px;
+    left: 64px;
+    top: 83px;
+    min-width: 433px;
+    width: 55.8%;
     border-bottom: 4px solid #d44141;
 }
 
 .article-statistics {
-    width: 200px;
+    width: 150px;
     font-size: 12px;
     position: relative;
     left: 27px;
@@ -354,12 +362,12 @@ select {
 }
 
 .article-views {
-    margin-left: 64px;
+    margin-left: 34px;
 }
 
 .article-text {
     color: #5b5664;
-    width: 480px;
+    width: 120%;
     line-height: 36px;
     word-spacing: 2.5px;
     font-size: 30px;
@@ -378,12 +386,13 @@ select {
 
 .post-review {
     background-color: #fff;
-    position: absolute;
-    top: 116px;
-    right: 275px;
+    position: relative;
+    margin-top: 115px;
+    margin-left: -256px;
     border: 1px solid black;
     width: 423px;
-    height: 229px;
+    width: 53%;
+    min-height: 229px;
 }
 
 .post-review::before {
@@ -403,7 +412,7 @@ select {
 
 .poster-bookmark-article {
     position: absolute;
-    right: 19px;
+    right: 11px;
     bottom: -14px;
 }
 
@@ -412,12 +421,11 @@ select {
 .articles {
     display: inline-flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     position: relative;
-    border-left: 1px solid #ebecf0;
-    float: right;
-    width: 96.3%;
-    height: 350px;
+    width: 100%;
+    padding-left: 33px;
 }
 
 .article-poster {
@@ -425,13 +433,15 @@ select {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 323px;
-    height: 90%;
+    min-width: 323px;
+    max-width: 30%;
+    margin: 10px;
 }
 
 .articles-poster-bookmark {
     position: relative;
     left: 135px;
+    left: 42%;
     top: -16px;
 }
 
@@ -462,7 +472,6 @@ select {
 .poster-img {
     margin-top: 24px;
     width: 100%;
-    height: 193px;
 }
 
 .poster-describe {
@@ -479,22 +488,20 @@ select {
 /* ADVICE SECTION */
 
 .advices {
-    float: right;
-    width: 96.3%;
+    width: 100%;
     height: 560px;
-    border-left: 1px solid #ebecf0;
     background: url("../images/common/cute-brain-cartoon.jpg") no-repeat right;
-    background-size: 85.5%;
-    background-position: 44px 99px;
+    background-size: cover;
+    background-position: center;
 }
 
 .advices .advice {
     border: 1px solid #ebecf0;
     position: relative;
-    left: 77px;
     top: 175px;
-    width: 607px;
-    height: 230px;
+    width: 70%;
+    margin: 0 auto;
+    min-height: 230px;
 }
 
 .advices .advice::before {
@@ -523,9 +530,10 @@ select {
 }
 
 .advices .articles-poster-bookmark {
-    position: relative;
-    left: 482px;
+    position: absolute;
+    left: 77%;
     top: 38px;
+    top: 96%;
 }
 
 .advice-describe {
@@ -534,7 +542,7 @@ select {
     word-wrap: wrap;
     top: -28px;
     left: 28px;
-    width: 500px;
+    padding-right: 30px;
     word-spacing: 4px;
     font-size: 30px;
     font-weight: bold;
@@ -542,7 +550,7 @@ select {
 
 .advices-caption {
     position: relative;
-    left: 45px;
+    left: 84px;
     top: 34px;
     color: #ffc830;
     text-transform: uppercase;
@@ -553,58 +561,7 @@ select {
 /* REVIEWS SECTION */
 
 .articles.articles-next {
-    border-left: 1px solid #f7f7f9;
     background-color: #f7f7f9;
-}
-
-/* AUTHOR COLUMN SECTION */
-
-.article-reviews--reverse .article-statistics {
-    width: 220px;
-    left: 91px;
-}
-
-.article-reviews--reverse .article-caption {
-    top: 51px;
-    left: 172px;
-}
-
-.article-reviews--reverse .post-review {
-    top: 81px;
-    left: 174px;
-}
-
-.article-reviews--reverse .snail-img {
-    top: 51px;
-    left: 578px;
-}
-
-.article-reviews--reverse .article-text {
-    text-align: right;
-    left: -87px;
-}
-
-.article-reviews--reverse .post-review::before {
-    display: block;
-    content: "";
-    margin-top: 86px;
-    margin-left: 410px;
-    background-color: #f94f4c;
-    width: 29px;
-    height: 4px;
-}
-
-.article-reviews--reverse .poster-bookmark-article {
-    position: absolute;
-    left: 12px;
-    bottom: -14px;
-}
-
-.article-reviews--reverse .article-read {
-    position: relative;
-    height: 28px;
-    left: 315px;
-    top: -7px;
 }
 
 /* SHOW MORE SECTION */
@@ -636,10 +593,69 @@ select {
     justify-content: space-around;
     align-items: center;
     position: relative;
-    border-left: 1px solid #ebecf0;
-    float: right;
-    width: 96.3%;
+    width: 100%;
     height: 50px;
+}
+
+/* AUTHOR COLUMN SECTION */
+
+.article-reviews--reverse .article-statistics {
+    margin-top: 90px;
+    width: 200px;
+    left: 90px;
+}
+
+.article-reviews--reverse .article-caption {
+    top: -31px;
+    left: 0px;
+}
+
+.article-reviews--reverse .post-review {
+    width: 55%;
+    position: absolute;
+    left: 350px;
+    top: -51px;
+}
+
+.article-reviews--reverse .snail-img {
+    position: relative;
+    top: -21px;
+    left: 258px;
+    left: 20%;
+}
+
+.article-reviews--reverse .article-text {
+    text-align: right;
+    left: -23%;
+}
+
+.article-reviews--reverse .post-review::before {
+    display: block;
+    content: "";
+    margin-top: 86px;
+    right: -15px;
+    position: absolute;
+    background-color: #f94f4c;
+    width: 29px;
+    height: 4px;
+}
+
+.article-reviews--reverse .article-statistics {
+    margin-top: 90px;
+    width: 200px;
+}
+
+.article-reviews--reverse .poster-bookmark-article {
+    position: absolute;
+    left: 12px;
+    bottom: -14px;
+}
+
+.article-reviews--reverse .article-read {
+    position: absolute;
+    height: 28px;
+    left: 70%;
+    top: 190px;
 }
 
 /* FOOTER */
@@ -651,9 +667,9 @@ select {
     color: #5b5664;
     position: relative;
     width: 100%;
-    height: 172px;
-    float: right;
+    padding: 30px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -677,7 +693,8 @@ select {
     background: none;
     border: none;
     border-bottom: 1px solid #000;
-    width: 300px;
+    width: 240px;
+    padding-right: 50px;
     margin-top: 20px;
     line-height: 30px;
 }
@@ -713,4 +730,154 @@ select {
     width: 350px;
     font-size: 13px;
     line-height: 20px;
+}
+
+.header-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 670px) {
+    .article-reviews {
+        display: block;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .header-mobile {
+        display: block;
+        position: fixed;
+        z-index: 2;
+        top: 0px;
+        width: 100%;
+        background-color: #fff;
+        font-family: ProximaNova-Regular;
+    }
+
+    .header-mobile-top-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .header-mobile-select-recipient__option {
+        position: absolute;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    .header-mobile-select-recipient__option:checked
+        + .header-mobile-select-recipient {
+        box-shadow: inset 0 -3px #ffc830;
+    }
+
+    .header-mobile-select-recipient {
+        line-height: 30px;
+        transition: all ease 0.2s;
+        margin-top: 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .header-mobile-burger-menu {
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .header-mobile-burger-menu__close-icon {
+        display: none;
+    }
+
+    .burger-menu__checkbox:checked
+        + .header-mobile
+        .header-mobile-burger-menu__close-icon {
+        display: block;
+    }
+
+    .burger-menu__checkbox:checked
+        + .header-mobile
+        .header-mobile-burger-menu__icon {
+        display: none;
+    }
+
+    .burger-menu__checkbox:checked ~ .left-menu {
+        height: 100vh;
+        padding: 0;
+        width: 100%;
+    }
+
+    .left-menu-item-list {
+        left: 0px;
+    }
+
+    .left-menu {
+        top: 90px;
+        width: 100%;
+        height: 0px;
+    }
+
+    .left-menu-navigation {
+        left: 30px;
+        margin-top: 0px;
+    }
+
+    .articles {
+        padding: 0;
+    }
+
+    .snail-img,
+    .article-reviews--reverse .snail-img {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .post-review {
+        width: 100%;
+        margin: 0 auto;
+        right: 0;
+        top: 0;
+    }
+
+    .article-text {
+        width: 95%;
+    }
+
+    .article-reviews--reverse .post-review {
+        position: relative;
+        width: 100%;
+        left: 0px;
+    }
+
+    .article-reviews--reverse .article-text {
+        left: 0px;
+    }
+    .article-reviews--reverse .article-read {
+        position: relative;
+        left: 80%;
+        top: -10px;
+    }
+
+    .article-reviews--reverse .post-review::before {
+        margin-left: 96%;
+    }
+
+    .advices .advice {
+        left: 0%;
+    }
 }
