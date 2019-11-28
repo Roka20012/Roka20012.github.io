@@ -1,6 +1,20 @@
 # Roka20012.github.io
 > Hi everyone! It's simple project hope you like this :)
 
+## Blog Test app
+[Demo](https://ssr-two-red.now.sh/) | [src](https://github.com/Roka20012/SSR)
+- Technology
+    - Redux
+    - Redux-thunk
+    - React.js
+    - React Hooks
+    - Next.js
+    - Styled Components
+    - TypeScript
+    - JavaScript
+    - HTML
+    - CSS
+
 ## Notes app
 [Client src](https://github.com/Roka20012/client) | [Backend src](https://github.com/Roka20012/node.js)
 - Technology
