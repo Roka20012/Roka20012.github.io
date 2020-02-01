@@ -2,7 +2,7 @@
 > Hi everyone! It's simple project hope you like this :)
 
 ## Blog Test app
-[Demo](https://ssr-two-red.now.sh/) | [src](https://github.com/Roka20012/SSR)
+[Demo](https://ssr.broslavskyrostislaw.now.sh/) | [src](https://github.com/Roka20012/SSR)
 - Technology
     - Redux
     - Redux-thunk
