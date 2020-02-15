@@ -1,6 +1,16 @@
 # Roka20012.github.io
 > Hi everyone! It's simple project hope you like this :)
 
+## Notes app
+[Client src](https://github.com/Roka20012/client) | [Backend src](https://github.com/Roka20012/node.js)
+- Technology
+    - Redux
+    - React.js
+    - JavaScript
+    - Node.js
+    - HTML
+    - CSS
+
 ## Blog Test app
 [Demo](https://ssr.broslavskyrostislaw.now.sh/) | [src](https://github.com/Roka20012/SSR)
 - Technology
@@ -15,18 +25,14 @@
     - HTML
     - CSS
 
-## Notes app
-[Client src](https://github.com/Roka20012/client) | [Backend src](https://github.com/Roka20012/node.js)
+## Bokmai project
+[Demo bokmai-project](https://roka20012.github.io/bokmai-project/) | [src](https://github.com/Roka20012/Roka20012.github.io/tree/master/bokmai-project)
 - Technology
-    - Redux
-    - React.js
-    - JavaScript
-    - Node.js
     - HTML
     - CSS
 
-## Bokmai project
-[Demo bokmai-project](https://roka20012.github.io/bokmai-project/) | [src](https://github.com/Roka20012/Roka20012.github.io/tree/master/bokmai-project)
+## About me
+[Demo about me landing](https://roka20012.github.io/about-me/) | [src](https://github.com/Roka20012/about-me)
 - Technology
     - HTML
     - CSS
